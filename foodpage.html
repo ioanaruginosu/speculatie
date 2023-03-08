@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<style>
+
+#gallery {
+   line-height:0;
+   -webkit-column-count:3; 
+   -webkit-column-gap:0px; 
+   -moz-column-count:5;
+   -moz-column-gap:0px;
+   column-count:3;
+   column-gap:0px;
+}
+
+#gallery img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+}
+
+body {
+    background-image: url('fundal.jpg');
+    background-repeat: no-repeat;
+        background-color: white;
+}
+
+.title {
+        
+        font-size: 35px;
+        color: #7F525D;
+        margin-left: 20px;
+        line-height: 0.1;
+        margin-top: 100;
+        padding: 0;
+    }
+
+.back
+{
+    font-size: 35px;
+        color: #7F525D;
+        margin-left: 20px;
+        line-height: 0.1;
+        margin-top: 100;
+        padding: 0;
+        float: right;
+        cursor: pointer;
+        transition-duration: 0.4s;
+}
+
+.back:hover {
+    color: #E590DE;
+}
+
+.decor {
+    font-size: 35px;
+        color: white;
+        line-height: 0.1;
+        margin-top: 100;
+        padding: 0;
+       margin-left:425px;
+}
+
+.principal > * {
+    display: inline-block;
+}
+
+
+</style>
+
+
+<html>
+
+<body>
+    <div class="principal">
+
+        <div class="title">
+            <h2>food ♡</h2>
+        </div>
+
+        <div class="decor">
+            <p>⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+        </div>
+        <div class="back">
+            <h2 onclick="window.location.href='life.html';">୨back୧</h2>
+        </div>
+        
+    </div>
+  
+    <div id="gallery">
+            <img src="sushi.jpg">
+            <img src="avocado toast.jpg">
+            <img src="oatmeal.jpg">
+            <img src="sushi2.jpg">
+            <img src="coffee.jpg">
+            <img src="toasts2.jpg">
+    </div>
+        
+</body>
+
+</html>
