@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body {
-        background-color: #FDD7E4;
-    }
-    h1 {
-        color: #7F525D;
-        text-align: center;
-        font-size: 30px;
-        transition-duration: 0.4s;
-        cursor: pointer;
+        background-image: url('fundal.jpg');
+        background-repeat: no-repeat;
+        background-color: white;
     }
     hr {
         border-top: 1px solid #7F525D;
     }
-   
+    
     p {
         text-align: left;
 
@@ -24,63 +19,73 @@
         text-align: center;
         padding-bottom: 20px;
     }
-    .aboutme {
-        text-align: center;
+    h1 {
         color: #7F525D;
-        background-color: #FDD7E4;
-        border: none;
+        text-align: center;
+        font-size: 30px;
+        transition-duration: 0.4s;
         cursor: pointer;
-        font-size: 20px;
     }
-    .poems {
-        text-align: center;
-        color: #7F525D;
-        background-color: #FDD7E4;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    .contact {
-        text-align: center;
-        color: #7F525D;
-        background-color: #FDD7E4;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 50px;
-        color: #7F525D;
-        margin-left: 20px;
-        padding-bottom: 0px;
-        line-height: 0.5;
-        text-align: center;
-    }
-  p {
-    color: #7F525D;
-    text-align: center;
-    font-size: 25px;
-  }
-  h1:hover {
+    h1:hover {
         color: #E590DE;
         
+    }
+    hr {
+        border-top: 1px solid #7F525D;
+    }
+    .aboutme {
+        text-align: center;
+        background-color: transparent;
+        color: #7F525D;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
     }
     .aboutme:hover {
         color: #E590DE;
         
     }
+    .poems {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
     .poems:hover {
         color: #E590DE;
         
+    }
+    .contact {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
     }
     .contact:hover {
         color: #E590DE;
         
     }
+    
+    
+    h2 {
+        
+        font-size: 50px;
+        color: #7F525D;
+        margin-left: 20px;
+        line-height: 0.1;
+    }
+ 
     .life{
         text-align: center;
         color: #7F525D;
-        background-color: #FDD7E4;
+        background-color: transparent;
         border: none;
         cursor: pointer;
         font-size: 20px;
@@ -90,16 +95,432 @@
         color: #E590DE;
         
     }
+
+/*.inima1 {
+    width: 25%;
+    height: auto;
+    margin-top:210px;
+   margin-bottom: 5px;
+   float: left;
+   margin-left: 5px;
+   position: relative;
+}    
+
+.inima2 {
+    width: 25%;
+    height: auto;
+   margin-bottom: 5px;
+   margin-top: 200px;
+   float: right;
+   position: relative;
+}   */
+/*.anotimpuri img {
+  margin-top:40px;
+  margin-left: 20px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 80px;;
+  float: left;
+  margin-top: 300px;
+  font-size: 2.5em;
+  
+}
+
+.cioburi img {
+  margin-top:70px;
+  margin-left: 60px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie1{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 455px;
+  float: left;
+  margin-top: 345px;
+  font-size: 2.5em;
+  
+}
+
+.criza img {
+  margin-top:10px;
+  margin-left: 100px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+
+.poezie2{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 890px;
+  float: left;
+  margin-top: 320px;
+  font-size: 2.5em;
+  
+}
+
+.estetica img {
+  margin-top:0px;
+  margin-left: 480px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie3{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 1200px;
+  float: left;
+  margin-top: 505px;
+  font-size: 2.5em;
+  
+}
+
+.etajul img {
+  margin-top:-100px;
+  margin-left: 785px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie4{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 860px;
+  float: left;
+  margin-top: 560px;
+  font-size: 2.5em;
+  
+}
+
+.galaxia img {
+  margin-top:-490px;
+  margin-left: 1180px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie5{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 1260px;
+  float: left;
+  margin-top: 245px;
+  font-size: 2.5em;
+  
+}
+
+.innerchild img {
+  margin-top:-20px;
+  margin-left: 1180px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie6{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 1250px;
+  float: left;
+  margin-top: 710px;
+  font-size: 2.5em;
+  
+}
+
+.iulie img {
+  margin-top:-350px;
+  margin-left: 70px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie7{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 170px;
+  float: left;
+  margin-top: 530px;
+  font-size: 2.5em;
+  
+}
+
+
+.lumina img {
+  margin-top:-280px;
+  margin-left: 405px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie8{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 500px;
+  float: left;
+  margin-top: 600px;
+  font-size: 2.5em;
+  
+}
+
+.mersul img {
+  margin-top:-100px;
+  margin-left: 790px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie9{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 807px;
+  float: left;
+  margin-top: 793px;
+  font-size: 2.5em;
+  
+}
+
+.painea img {
+  margin-top:-150px;
+  margin-left: 400px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie10{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 450px;
+  float: left;
+  margin-top: 800px;
+  font-size: 2.5em;
+  
+}
+
+.ploaie img {
+  margin-top:-180px;
+  margin-left: -685px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie11{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 83px;
+  float: left;
+  margin-top: 755px;
+  font-size: 2.5em;
+  
+}
+
+
+.scaparea img {
+  margin-top:20px;
+  margin-left: -650px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie12{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 125px;
+  float: left;
+  margin-top: 960px;
+  font-size: 2.5em;
+  
+}
+
+.schimbarea img {
+  margin-top:65px;
+  margin-left: -275px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie13 {
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 480px;
+  float: left;
+  margin-top: 1010px;
+  font-size: 2.5em;
+  
+}
+
+.sentimente img {
+  margin-top:40px;
+  margin-left: 90px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie14 {
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 876px;
+  float: left;
+  margin-top: 975px;
+  font-size: 2.5em;
+  
+}
+
+.uitama img {
+  margin-top:-230px;
+  margin-left: 430px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie15 {
+    position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 1240px;
+  float: left;
+  margin-top: 930px;
+  font-size: 2.5em;
+  
+}
+
+.noiembrie img {
+  margin-top:30px;
+  margin-left: -100px;
+    position: relative;
+  float:left;
+  color: white;
+  cursor: pointer;
+}
+
+.poezie16 {
+    position: absolute;
+ /* top: 8px;
+  left: 16px;*/
+  /*margin-left: 700px;
+  float: left;
+  margin-top: 1185px;*/
+  font-size: 2.5em;
+  
+}*/
+
+
+#gallery {
+   line-height:0;
+   -webkit-column-count:2; 
+   -webkit-column-gap:0px; 
+   -moz-column-count:2;
+   -moz-column-gap:0px;
+   column-count:2;
+   column-gap:0px;
+}
+
+#gallery img {
+   width: 20vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+}
+
+@media (max-width: 1200px) {
+   #gallery img {
+    width: 20vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+   }
+}
+
+@media (max-width: 1000px) {
+   #gallery img {
+    width: 25vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+   }
+}
+
+@media (max-width: 800px) {
+   #gallery img {
+    width: 25vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+   }
+}
+
+@media (max-width: 400px) {
+   #gallery img {
+    width: 30vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
+   }
+}
 </style>
+
 
 <html>
 <head>
-<title>Speculatie</title>
+<title>speculatie | poems</title>
 </head>
 <body>
 
     <div>
-        <h1 onclick="window.location.href='home.html';">speculatie ୨୧</h1>
+        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
         <button class="aboutme" onclick="window.location.href='aboutme.html';">
             ♡ about me
         </button>
@@ -109,72 +530,43 @@
         <button class = "life" onclick="window,location.href='life.html';">
             ♡ life
         </button>
-        <button class = "contact">
+        <button class = "contact" onclick="window.location.href='contact.html';">
             ♡ contact
         </button>
        
+ 
+
     </div>
     <hr>
 
+    <h2>
+        ♡ poems
+    </h2>
 
-    <h2>✩pâinea prăjită</h2>
-    <p>sunt zile<br>
-        cum e aceasta,<br>
-        în care te trezești deja obosit,<br>
-        și încerci să cauți un sens<br>
-        să te ridici din pat că a sunat alarma<br>
-        și e deja ora patru<br>
-        și îți dai seama<br>
-        că fiecare zi e la fel.<br>
-        la fel de deprimantă.<br>
-        deschizi radioul<br>
-        să auzi altceva<br>
-        în afară de gândurile distrugătoare,<br>
-        dar nu te poți abține<br>
-        și devii din nou captiv propriei minți.<br>
-        și iar în cameră e prea cald,<br>
-        părul ți-e prea ciufulit<br>
-        și perna prea inconfortabilă.<br>
-        pumni în pereți,<br>
-        lacrimi,<br>
-        sânge,<br>
-        urlete,<br>
-        buze congestionate<br>
-        și brusc ești calm.<br>
-        ești ghemuit în colțul bucătăriei,<br>
-        după ce ai ars ultima felie de pâine<br>
-        și ești flămând<br>
-        că ți-ai incinerat micul dejun,<br>
-        dar și fericirea,<br>
-        de ani buni.<br>
-        și poate crezi că-i vina ta,<br>
-        dar era și culmea să n-o faci<br>
-        când timp de 204 luni s-au străduit<br>
-        să-ți infiltreze asta în cap<br>
-        pentru că le e mult mai ușor să se accepte așa.<br>
-        ești rezultatul a tot ce au vrut să facă din tine<br>
-        și erai prea mic să știi că poți sa îi oprești<br>
-        și când ți-ai dat seama<br>
-        era târziu<br>
-        și nu te-ai mai putut întoarce.<br>
-        și acum stai în bucătărie<br>
-        și deja nu mai suporți mirosul de pâine arsă<br>
-        dar nu poți să te ridici<br>
-        că te doare prea tare sufletul<br>
-        și te întrebi cât timp o să mai doară.<br>
-        că ești un amărât de chelner<br>
-        la al doilea colț de stradă<br>
-        și n-ai bani<br>
-        să-ți mai cumperi și pastile.<br>
-        dar, uite.<br>
-        n-o să treacă.<br>
-        o să te obișnuiești<br>
-        cum ai făcut-o cu mirosul de pâine arsă<br>
-        în tot timpul ăsta<br>
-        în care ai găsit ceva să te streseze mai tare<br>
-        decât că ți-ar putea lua foc apartamentul<br>
-        și să mai fii și cu stomacul gol.</p>
+   
+    
+        
+     <div id="gallery">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+     </div>
+
 </body>
-
-
-</html>
