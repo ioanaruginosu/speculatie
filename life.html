@@ -38,9 +38,6 @@
         color: #E590DE;
         
     }
-    body {
-        background-color: #FDD7E4;
-    }
     hr {
         border-top: 1px solid #7F525D;
     }
@@ -126,46 +123,149 @@ img:hover {
   color: white;
   
 }
-.top-food {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  margin-left: 95px;
-  margin-top: 360px;
-  font-size: 35px;
-  color: #FDD7E4;
-}
-.top-travel {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  margin-left: 390px;
-  margin-top: 360px;
-  font-size: 35px;
-  color: #FDD7E4;
-}
-.top-mitski{
-position: absolute;
-  top: 8px;
-  left: 16px;
-  margin-left: 690px;
-  margin-top: 360px;
-  font-size: 35px;
-  color: #FDD7E4;
-}
 
-.top-lifestyle{
-position: absolute;
-  top: 8px;
-  left: 16px;
-  margin-left: 995px;
-  margin-top: 360px;
-  font-size: 35px;
-  color: #FDD7E4;
-}
+
+
 .container img {
     cursor: pointer;
 }
+
+
+
+@media (max-width: 1200px) {
+    .aboutme {
+      font-size: 25px;
+    }
+
+    .poems {
+      font-size: 25px;
+    }
+
+    .life {
+      font-size: 25px;
+    }
+
+    .contact {
+      font-size: 25px;
+    }
+
+    .categ {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+
+      font-size: 55px;
+    }
+
+ 
+
+  }
+
+@media (max-width: 1000px) {
+    .categ {
+      text-align: center;
+    }
+
+    .aboutme {
+      font-size: 25px;
+    }
+
+    .poems {
+      font-size: 25px;
+    }
+
+    .life {
+      font-size: 25px;
+    }
+
+    .contact {
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+
+
+  }
+
+  @media (max-width: 800px) {
+
+
+    .aboutme {
+      font-size: 25px;
+    }
+
+    .poems {
+      font-size: 25px;
+    }
+
+    .life {
+      font-size: 25px;
+    }
+
+    .contact {
+      font-size: 25px;
+    }
+
+    .categ {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+
+    h2 {
+      font-size: 50px;
+    }
+
+   
+  }
+
+  @media (max-width: 400px) {
+
+    .categ {
+
+      text-align: center;
+    }
+
+    .aboutme {
+      font-size: 25px;
+    }
+    .poems {
+      font-size: 25px;
+    }
+
+    .life {
+      font-size: 25px;
+    }
+    .contact {
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+
+      font-size: 50px;
+    }
+
+  }
+
 </style>
 
 <html>
@@ -174,8 +274,8 @@ position: absolute;
 </head>
 <body>
 
-    <div>
-        <h1 onclick="window.location.href='home.html';">speculatie ୨୧</h1>
+    <div class="categ">
+        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
         <button class="aboutme" onclick="window.location.href='aboutme.html';">
             ♡ about me
         </button>
@@ -188,29 +288,20 @@ position: absolute;
         <button class = "contact" onclick="window.location.href='contact.html';">
             ♡ contact
         </button>
-       
+       </div>
         
     </div>
     <hr>
     <h2>♡ life</h2>
     <div class="container">
-        <img src="food.jpg" onclick="window.location.href='foodpage.html';" alt="food" style="width:20%;">
+        <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food" style="width:20%;">
+      
+        <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel" style="width:20%">
         
-        <div class="top-food">
-            <span style="background-color: #7F525D;">food ♡</span>
-        </div>
-        <img src="olanda1.jpg" onclick="window.location.href='travelpage.html';" alt="travel" style="width:18.8%">
-        <div class="top-travel">
-            <span style="background-color: #7F525D">travel ♡</span>
-        </div>
-        <img src="mitski.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski" style="width:20%">
-        <div class="top-mitski">
-            <span style="background-color: #7F525D">mitski ♡</span>
-        </div>
-        <img src="hellokitty.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty" style="width:20%">
-        <div class="top-lifestyle">
-            <span style="background-color: #7F525D">lifestyle ♡</span>
-        </div>
+        <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski" style="width:20%">
+        
+        <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty" style="width:20%">
+        ]
       </div>
     
     
