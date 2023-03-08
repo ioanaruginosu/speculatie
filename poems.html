@@ -114,7 +114,7 @@
    float: right;
    position: relative;
 }   */
-.anotimpuri img {
+/*.anotimpuri img {
   margin-top:40px;
   margin-left: 20px;
     position: relative;
@@ -448,20 +448,34 @@
 
 .poezie16 {
     position: absolute;
-  top: 8px;
-  left: 16px;
-  margin-left: 700px;
+ /* top: 8px;
+  left: 16px;*/
+  /*margin-left: 700px;
   float: left;
-  margin-top: 1185px;
+  margin-top: 1185px;*/
   font-size: 2.5em;
   
+}*/
+
+
+#gallery {
+   line-height:0;
+   -webkit-column-count:2; 
+   -webkit-column-gap:0px; 
+   -moz-column-count:2;
+   -moz-column-gap:0px;
+   column-count:2;
+   column-gap:0px;
+}
+
+#gallery img {
+   width: 20vw;
+   height: auto;
+   margin-bottom: 0px; 
+   margin-top: 0px;
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 959px){
-
-  
-}
 
 
 </style>
@@ -500,91 +514,27 @@
    
     
         
-       <div class="poezii"> 
-        <div class="anotimpuri">
-            <img src="nor.png" onclick="window.location.href='anotimpuri.html';" style="width:20vw;">
-            <span class="poezie" style="color: #7F525D;">anotimpuri</span>
-        </div>
-
-        <div class="cioburi">
-            <img src="nor.png" onclick="window.location.href='cioburi.html';" style="width:20vw;">
-            <span class="poezie1" style="color: #7F525D;">atentie la <br>cioburi</span>
-        </div>
-
-        <div class="criza">
-            <img src="nor.png" onclick="window.location.href='criza.html';" style="width:20vw;">
-            <span class="poezie2" style="color: #7F525D;">criza</span>
-        </div>
-
-        <div class="estetica">
-            <img src="nor.png" onclick="window.location.href='esteticauratului.html';" style="width:20vw;">
-            <span class="poezie3" style="color: #7F525D;">estetica uratului</span>
-        </div>
-      
-        <div class="etajul">
-            <img src="nor.png" onclick="window.location.href='etajul.html';" style="width:20vw;">
-            <span class="poezie4" style="color: #7F525D;">etajul 10</span>
-        </div>
-
-        <div class="galaxia">
-            <img src="nor.png" onclick="window.location.href='galaxia.html';" style="width:20vw;">
-            <span class="poezie5" style="color: #7F525D;">galaxia</span>
-        </div>
-
-        <div class="innerchild">
-            <img src="nor.png" onclick="window.location.href='innerchild.html';" style="width:20vw;">
-            <span class="poezie6" style="color: #7F525D;">inner child</span>
-        </div>
-
-        <div class="iulie">
-            <img src="nor.png" onclick="window.location.href='iulie.html';" style="width:20vw;">
-            <span class="poezie7" style="color: #7F525D;">iulie</span>
-        </div>
-
-        <div class="lumina">
-            <img src="nor.png" onclick="window.location.href='lumina.html';" style="width:20vw;">
-            <span class="poezie8" style="color: #7F525D;">lumina</span>
-        </div>
-
-        <div class="mersul">
-            <img src="nor.png" onclick="window.location.href='mersulcuspatele.html';" style="width:20vw;">
-            <span class="poezie9" style="color: #7F525D;">mersul cu spatele</span>
-        </div>
-
-        <div class="painea">
-            <img src="nor.png" onclick="window.location.href='painea.html';" style="width:20vw;">
-            <span class="poezie10" style="color: #7F525D;">painea prajita</span>
-        </div>
-
-        <div class="ploaie">
-          <img src="nor.png" onclick="window.location.href='ploaie.html';" style="width:20vw;">
-          <span class="poezie11" style="color: #7F525D;">nu e despre <br> ploaie</span>
-      </div>
-
-      <div class="scaparea">
-        <img src="nor.png" onclick="window.location.href='scaparea.html';" style="width:20vw;">
-        <span class="poezie12" style="color: #7F525D;">scaparea</span>
-    </div>
-
-    <div class="schimbarea">
-      <img src="nor.png" onclick="window.location.href='schimbarea.html';" style="width:20vw;">
-      <span class="poezie13" style="color: #7F525D;">schimbarea</span>
-  </div>
-
-  <div class="sentimente">
-    <img src="nor.png" onclick="window.location.href='sentimente.html';" style="width:20vw;">
-    <span class="poezie14" style="color: #7F525D;">sentimente <br>reciclate</span>
-</div>
-
-<div class="uitama">
-  <img src="nor.png" onclick="window.location.href='uitama.html';" style="width:20vw;">
-  <span class="poezie15" style="color: #7F525D;">uita-ma</span>
-</div>
-
-<div class="noiembrie">
-  <img src="nor.png" onclick="window.location.href='noiembrie.html';" style="width:20vw;">
-  <span class="poezie16" style="color: #7F525D;">noiembrie</span>
-</div>
-</div>
+     <div id="gallery">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+      <img src="nor.png">
+     </div>
 
 </body>
