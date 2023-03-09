@@ -1,341 +1,341 @@
-   <!DOCTYPE html>
+    <!DOCTYPE html>
 
-<style>
-    body {
-        background-image: url('fundal.jpg');
-        background-repeat: no-repeat;
-        background-color: white;
+    <style>
+        body {
+            background-image: url('fundal.jpg');
+            background-repeat: no-repeat;
+            background-color: white;
+        }
+    
+        hr {
+            border-top: 1px solid #7F525D;
+        }
+        img {
+            max-width: 25%;
+            height: auto;
+            margin-left: 20px;
+            float: left;
+            padding-right: 30px;
+        }
+        p {
+            text-align: left;
+            color: #7F525D;
+            font-size: 25px;
+        }
+        div { 
+            
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #7F525D;
+            text-align: center;
+            font-size: 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        h1:hover {
+            color: #E590DE;
+            
+        }
+        hr {
+            border-top: 1px solid #7F525D;
+        }
+        .aboutme {
+            text-align: center;
+            background-color: transparent;
+            color: #7F525D;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .aboutme:hover {
+            color: #E590DE;
+            
+        }
+        .poems {
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .poems:hover {
+            color: #E590DE;
+            
+        }
+        .contact {
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .contact:hover {
+            color: #E590DE;
+            
+        }
+        
+        
+        h2 {
+            
+            font-size: 50px;
+            color: #7F525D;
+        
+            margin-left: 20px;
+            line-height: 0.1;
+        }
+        .life{
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .life:hover {
+            color: #E590DE;
+            
+        }
+
+        img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
     }
- 
-    hr {
-        border-top: 1px solid #7F525D;
+
+    img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
-    img {
-        max-width: 25%;
+
+    #gallery {
+        -webkit-column-count: 4;
+        -webkit-column-gap: 2px;
+        -moz-column-count: 4;
+        -moz-column-gap: 2px;
+        column-count: 4;
+        column-gap: 2px;
+    }
+
+    #gallery img {
+        width: 100%;
         height: auto;
-        margin-left: 20px;
-        float: left;
-        padding-right: 30px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        cursor: pointer;
+        
     }
-    p {
-        text-align: left;
-        color: #7F525D;
+
+
+
+
+    @media (max-width: 1200px) {
+        .aboutme {
         font-size: 25px;
-    }
-    div { 
-        
+        }
+
+        .poems {
+        font-size: 25px;
+        }
+
+        .life {
+        font-size: 25px;
+        }
+
+        .contact {
+        font-size: 25px;
+        }
+
+        .categ {
         text-align: center;
-        padding-bottom: 20px;
+        }
+
+        h1 {
+        font-size: 35px;
+        }
+
+        h2 {
+
+        font-size: 55px;
+        }
+
+        #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+
     }
-    h1 {
-        color: #7F525D;
+
+    }
+
+    @media (max-width: 1000px) {
+        .categ {
         text-align: center;
-        font-size: 30px;
-        transition-duration: 0.4s;
-        cursor: pointer;
+        }
+
+        .aboutme {
+        font-size: 25px;
+        }
+
+        .poems {
+        font-size: 25px;
+        }
+
+        .life {
+        font-size: 25px;
+        }
+
+        .contact {
+        font-size: 25px;
+        }
+
+        h1 {
+        font-size: 40px;
+        }
+
+        h2 {
+        font-size: 60px;
+        }
+
+        #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
     }
-    h1:hover {
-        color: #E590DE;
-        
+
     }
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-    .aboutme {
+
+    @media (max-width: 800px) {
+
+
+        .aboutme {
+        font-size: 25px;
+        }
+
+        .poems {
+        font-size: 25px;
+        }
+
+        .life {
+        font-size: 25px;
+        }
+
+        .contact {
+        font-size: 25px;
+        }
+
+        .categ {
         text-align: center;
-        background-color: transparent;
-        color: #7F525D;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .aboutme:hover {
-        color: #E590DE;
-        
-    }
-    .poems {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .poems:hover {
-        color: #E590DE;
-        
-    }
-    .contact {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .contact:hover {
-        color: #E590DE;
-        
-    }
-    
-    
-    h2 {
-        
+        }
+
+        h1 {
+        font-size: 45px;
+        }
+
+
+        h2 {
         font-size: 50px;
-        color: #7F525D;
-      
-        margin-left: 20px;
-        line-height: 0.1;
+        }
+
+        #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
     }
-    .life{
+    }
+
+    @media (max-width: 400px) {
+
+        .categ {
+
         text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
+        }
+
+        .aboutme {
+        font-size: 25px;
+        }
+        .poems {
+        font-size: 25px;
+        }
+
+        .life {
+        font-size: 25px;
+        }
+        .contact {
+        font-size: 25px;
+        }
+
+        h1 {
+        font-size: 50px;
+        }
+
+        h2 {
+
+        font-size: 50px;
+        }
+
+        #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
     }
-    .life:hover {
-        color: #E590DE;
+    }
+
+    </style>
+
+    <html>
+    <head>
+    <title>speculatie | life</title>
+    </head>
+    <body>
+
+        <div class="categ">
+            <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
+            <button class="aboutme" onclick="window.location.href='aboutme.html';">
+                ♡ about me
+            </button>
+            <button class = "poems" onclick="window.location.href='poems.html';">
+                ♡ poems
+            </button>
+            <button class = "life" onclick="window.location.href='life.html';">
+                ♡ life
+            </button>
+            <button class = "contact" onclick="window.location.href='contact.html';">
+                ♡ contact
+            </button>
+        </div>
+            
+        </div>
+        <hr>
+        <h2>♡ life</h2>
+        <div id="gallery">
+            <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food">
         
-    }
-
-    img {
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 4px;
-  padding: 5px;
-  width: 100px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.#gallery {
-    -webkit-column-count: 4;
-    -webkit-column-gap: 5px;
-    -moz-column-count: 4;
-    -moz-column-gap: 5px;
-    column-count: 4;
-    column-gap: 5px;
-  }
-
-  #gallery img {
-    width: 20%;
-    height: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-    
-  }
-
-
-
-
-@media (max-width: 1200px) {
-    .aboutme {
-      font-size: 25px;
-    }
-
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-
-    .contact {
-      font-size: 25px;
-    }
-
-    .categ {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 35px;
-    }
-
-    h2 {
-
-      font-size: 55px;
-    }
-
-    .#gallery {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
-
-  }
-
-  }
-
-@media (max-width: 1000px) {
-    .categ {
-      text-align: center;
-    }
-
-    .aboutme {
-      font-size: 25px;
-    }
-
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-
-    .contact {
-      font-size: 25px;
-    }
-
-    h1 {
-      font-size: 40px;
-    }
-
-    h2 {
-      font-size: 60px;
-    }
-
-    .#gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-  }
-
-  }
-
-  @media (max-width: 800px) {
-
-
-    .aboutme {
-      font-size: 25px;
-    }
-
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-
-    .contact {
-      font-size: 25px;
-    }
-
-    .categ {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 45px;
-    }
-
-
-    h2 {
-      font-size: 50px;
-    }
-
-    .#gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-  }
-  }
-
-  @media (max-width: 400px) {
-
-    .categ {
-
-      text-align: center;
-    }
-
-    .aboutme {
-      font-size: 25px;
-    }
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-    .contact {
-      font-size: 25px;
-    }
-
-    h1 {
-      font-size: 50px;
-    }
-
-    h2 {
-
-      font-size: 50px;
-    }
-
-    .#gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-  }
-  }
-
-</style>
-
-<html>
-<head>
-<title>speculatie | life</title>
-</head>
-<body>
-
-    <div class="categ">
-        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
-        <button class="aboutme" onclick="window.location.href='aboutme.html';">
-            ♡ about me
-        </button>
-        <button class = "poems" onclick="window.location.href='poems.html';">
-            ♡ poems
-        </button>
-        <button class = "life" onclick="window.location.href='life.html';">
-            ♡ life
-        </button>
-        <button class = "contact" onclick="window.location.href='contact.html';">
-            ♡ contact
-        </button>
-       </div>
+            <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel">
+            
+            <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski">
+            
+            <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty">
         
-    </div>
-    <hr>
-    <h2>♡ life</h2>
-    <div id="gallery">
-        <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food">
-      
-        <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel">
+        </div>
         
-        <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski">
         
-        <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty">
-    
-      </div>
-    
-    
-      
-      
-      
+        
+        
+        
 
 
-</body>
+    </body>
 
 
-</html>
+    </html>
