@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <style>
+    #gallery {
+        line-height: 0;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 0px;
+        -moz-column-count: 4;
+        -moz-column-gap: 0px;
+        column-count: 4;
+        column-gap: 0px;
+    }
 
-#gallery {
-   line-height:0;
-   -webkit-column-count:4; 
-   -webkit-column-gap:0px; 
-   -moz-column-count:4;
-   -moz-column-gap:0px;
-   column-count:4;
-   column-gap:0px;
-}
+    #gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
 
-#gallery img {
-   width: 100%;
-   height: auto;
-   margin-bottom: 0px; 
-   margin-top: 0px;
-}
-
-body {
-    background-image: url('fundal.jpg');
-    background-repeat: no-repeat;
+    body {
+        background-image: url('fundal.jpg');
+        background-repeat: no-repeat;
         background-color: white;
-}
+    }
 
-.title {
-        
+    .title {
+
         font-size: 35px;
         color: #7F525D;
-        margin-left: 20px;
+      /*  margin-left: 20px;*/
         line-height: 0.1;
         margin-top: 100;
         padding: 0;
+        float: left;
     }
 
-.back
-{
-    font-size: 35px;
+    .back {
+        font-size: 35px;
         color: #7F525D;
         margin-left: 20px;
         line-height: 0.1;
@@ -45,26 +44,92 @@ body {
         float: right;
         cursor: pointer;
         transition-duration: 0.4s;
-}
+    }
 
-.back:hover {
-    color: #E590DE;
-}
+    .back:hover {
+        color: #E590DE;
+    }
 
-.decor {
-    font-size: 35px;
+    
+
+    .decor2 {
+        font-size: 35px;
         color: white;
         line-height: 0.1;
         margin-top: 100;
         padding: 0;
-       margin-left:425px;
-}
+        float: right;
+        /*margin-left:425px;*/
+    }
+    .decor1 {
+        font-size: 35px;
+        color: white;
+        line-height: 0.1;
+        margin-top: 100;
+        padding: 0;
+        /*float: left;*/
+        /*margin-left:425px;*/
+    }
 
-.principal > * {
-    display: inline-block;
-}
+    .principal>* {
+        display: inline-block;
+    }
 
+    @media (max-width: 1200px) {
+        .title {
+            font-size: 55px;
+        }
 
+        .decor {
+            font-size: 55px;
+        }
+
+        .back {
+            font-size: 55px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .title {
+            font-size: 60px;
+        }
+
+        .decor {
+            font-size: 60px;
+        }
+
+        .back {
+            font-size: 60px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .title {
+            font-size: 65px;
+        }
+
+        .decor {
+            font-size: 65px;
+        }
+
+        .back {
+            font-size: 65px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .title {
+            font-size: 70px;
+        }
+
+        .decor {
+            font-size: 70px;
+        }
+
+        .back {
+            font-size: 70px;
+        }
+    }
 </style>
 
 
@@ -72,20 +137,28 @@ body {
 
 <body>
     <div class="principal">
-
+        
         <div class="title">
-            <h2>travel ♡</h2>
+            <h2>travel ♡</h2> 
+            
         </div>
 
-        <div class="decor">
-            <p>⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
-        </div>
+
+           <div class="decor1">
+            <p>&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+           </div>
+       
+
         <div class="back">
             <h2 onclick="window.location.href='life.html';">୨back୧</h2>
         </div>
-        
+
+        <div class="decor2">
+            <p>⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+        </div>
+
+
     </div>
-  
     <div id="gallery">
             <img src="anglia1.jpg">
             <img src="anglia2.jpg">
