@@ -104,18 +104,12 @@
             
         }
 
-        img {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 4px;
-    padding: 5px;
-    width: 100px;
+
+    #gallery img:hover {
+    box-shadow: 0 0 2px 1px #7F525D;
     }
 
-    img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
-
-    #gallery {
+    /*#gallery {
         -webkit-column-count: 4;
         -webkit-column-gap: 2px;
         -moz-column-count: 4;
@@ -127,14 +121,25 @@
     #gallery img {
         width: 100%;
         height: auto;
-        margin-bottom: 2px;
-        margin-top: 2px;
+        margin-bottom: 0px;
+        margin-top:0px;
         cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    height: auto;
         
+    }*/
+
+
+    img {
+        width: 20%;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    height: auto;
     }
-
-
-
 
     @media (max-width: 1200px) {
         .aboutme {
@@ -166,11 +171,15 @@
         font-size: 55px;
         }
 
-        #gallery {
+       /* #gallery {
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;
 
+    }*/
+
+    img {
+        width: 10%;
     }
 
     }
@@ -204,11 +213,15 @@
         font-size: 60px;
         }
 
-        #gallery {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
+       /* #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
 
+    }*/
+
+    img {
+        width: 10%;
     }
 
     }
@@ -245,11 +258,14 @@
         font-size: 50px;
         }
 
-        #gallery {
+       /* #gallery {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
 
+    }*/
+    img {
+        width: 10%;
     }
     }
 
@@ -283,11 +299,14 @@
         font-size: 50px;
         }
 
-        #gallery {
+       /* #gallery {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
 
+    }*/
+    img {
+        width: 10%;
     }
     }
 
@@ -318,16 +337,16 @@
         </div>
         <hr>
         <h2>♡ life</h2>
-        <div id="gallery">
-            <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food">
+       
+            <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" >
         
-            <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel">
+            <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" >
             
-            <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski">
+            <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';">
             
-            <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty">
+            <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" >
         
-        </div>
+    
         
         
         
