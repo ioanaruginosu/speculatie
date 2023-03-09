@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 
 <style>
     body {
@@ -115,20 +115,24 @@ img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.container {
-  margin-top:30px;
-  margin-left:120px;
-    position: relative;
-  text-align: center;
-  color: white;
-  
-}
+.#gallery {
+    -webkit-column-count: 4;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 4;
+    -moz-column-gap: 5px;
+    column-count: 4;
+    column-gap: 5px;
+  }
 
-
-
-.container img {
+  #gallery img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
     cursor: pointer;
-}
+    
+  }
+
 
 
 
@@ -162,7 +166,12 @@ img:hover {
       font-size: 55px;
     }
 
- 
+    .#gallery {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+  }
 
   }
 
@@ -195,7 +204,12 @@ img:hover {
       font-size: 60px;
     }
 
+    .#gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
 
+  }
 
   }
 
@@ -231,7 +245,12 @@ img:hover {
       font-size: 50px;
     }
 
-   
+    .#gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+  }
   }
 
   @media (max-width: 400px) {
@@ -264,6 +283,12 @@ img:hover {
       font-size: 50px;
     }
 
+    .#gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+  }
   }
 
 </style>
@@ -293,15 +318,15 @@ img:hover {
     </div>
     <hr>
     <h2>♡ life</h2>
-    <div class="container">
-        <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food" style="width:20%;">
+    <div id="gallery">
+        <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" alt="food">
       
-        <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel" style="width:20%">
+        <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" alt="travel">
         
-        <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski" style="width:20%">
+        <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" alt="mitski">
         
-        <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty" style="width:20%">
-        ]
+        <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';" alt="hello kitty">
+    
       </div>
     
     
