@@ -1,291 +1,293 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 
-<style>
-    h1 {
-        color: #7F525D;
+  <style>
+      h1 {
+          color: #7F525D;
+          text-align: center;
+          font-size: 30px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+      }
+
+      h1:hover {
+          color: #E590DE;
+
+      }
+
+      body {
+          background-image: url('fundal.jpg');
+          background-repeat: no-repeat;
+          background-color: white;
+      }
+
+      hr {
+          border-top: 1px solid #7F525D;
+      }
+
+      .aboutme {
+          text-align: center;
+          background-color: transparent;
+          color: #7F525D;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          transition-duration: 0.4s;
+      }
+
+      .aboutme:hover {
+          color: #E590DE;
+
+      }
+
+      .poems {
+          text-align: center;
+          color: #7F525D;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          transition-duration: 0.4s;
+      }
+
+      .poems:hover {
+          color: #E590DE;
+
+      }
+
+      .contact {
+          text-align: center;
+          color: #7F525D;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          transition-duration: 0.4s;
+      }
+
+      .contact:hover {
+          color: #E590DE;
+
+      }
+
+      p {
+          text-align: center;
+          font-size: 200px;
+      }
+
+      .life {
+          text-align: center;
+          color: #7F525D;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          transition-duration: 0.4s;
+      }
+
+      .life:hover {
+          color: #E590DE;
+
+      }
+
+
+      .principal > * {
+          margin-top: 0px;
+          display: inline-block;
+          padding-top: 0px;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+      }
+      .aripa1 {
+          color: white;
+          
+      }
+      .aripa2 {
+          color: white;
+          
+      }
+
+      .principal{
+          margin-top: 0px;
+      }
+
+      @media (max-width: 1200px) {
+      .aboutme {
+        font-size: 25px;
+      }
+
+      .poems {
+        font-size: 25px;
+      }
+
+      .life {
+        font-size: 25px;
+      }
+
+      .contact {
+        font-size: 25px;
+      }
+
+      .categ {
         text-align: center;
-        font-size: 30px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
+      }
 
-    h1:hover {
-        color: #E590DE;
+      h1 {
+        font-size: 35px;
+      }
 
-    }
+      h2 {
 
-    body {
-        background-image: url('fundal.jpg');
-        background-repeat: no-repeat;
-        background-color: white;
-    }
-
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-
-    .aboutme {
-        text-align: center;
-        background-color: transparent;
-        color: #7F525D;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-
-    .aboutme:hover {
-        color: #E590DE;
-
-    }
-
-    .poems {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-
-    .poems:hover {
-        color: #E590DE;
-
-    }
-
-    .contact {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-
-    .contact:hover {
-        color: #E590DE;
-
-    }
-
-    p {
-        text-align: center;
-        font-size: 200px;
-    }
-
-    .life {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-
-    .life:hover {
-        color: #E590DE;
-
-    }
-
-
-    .principal > * {
-        margin-top: 0px;
-        display: inline-block;
-        padding-top: 0px;
-    }
-    .aripa1 {
-        color: white;
-        
-    }
-    .aripa2 {
-        color: white;
-        
-    }
-
-    .principal{
-        margin-top: 0px;
-    }
-
-    @media (max-width: 1200px) {
-    .aboutme {
-      font-size: 25px;
-    }
-
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-
-    .contact {
-      font-size: 25px;
-    }
-
-    .categ {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 35px;
-    }
-
-    h2 {
-
-      font-size: 55px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .categ {
-      text-align: center;
-    }
-
-    .aboutme {
-      font-size: 25px;
-    }
-
-    .poems {
-      font-size: 25px;
-    }
-
-    .life {
-      font-size: 25px;
-    }
-
-    .contact {
-      font-size: 25px;
-    }
-
-    h1 {
-      font-size: 40px;
-    }
-
-    h2 {
-      font-size: 60px;
-    }
+        font-size: 55px;
+      }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
+      .categ {
+        text-align: center;
+      }
+
+      .aboutme {
+        font-size: 25px;
+      }
+
+      .poems {
+        font-size: 25px;
+      }
+
+      .life {
+        font-size: 25px;
+      }
+
+      .contact {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 800px) {
 
 
-.aboutme {
-  font-size: 25px;
-}
+  .aboutme {
+    font-size: 25px;
+  }
 
-.poems {
-  font-size: 25px;
-}
+  .poems {
+    font-size: 25px;
+  }
 
-.life {
-  font-size: 25px;
-}
+  .life {
+    font-size: 25px;
+  }
 
-.contact {
-  font-size: 25px;
-}
+  .contact {
+    font-size: 25px;
+  }
 
-.categ {
-  text-align: center;
-}
+  .categ {
+    text-align: center;
+  }
 
-h1 {
-  font-size: 45px;
-}
-
-
-h2 {
-  font-size: 50px;
-}
+  h1 {
+    font-size: 45px;
+  }
 
 
-}
-
-@media (max-width: 400px) {
-
-.categ {
-
-  text-align: center;
-}
-
-.aboutme {
-  font-size: 25px;
-}
-.poems {
-  font-size: 25px;
-}
-
-.life {
-  font-size: 25px;
-}
-.contact {
-  font-size: 25px;
-}
-
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-
-  font-size: 50px;
-}
- 
-
-}
-</style>
-
-<html>
-
-<head>
-    <title>speculatie</title>
-</head>
-
-<body>
+  h2 {
+    font-size: 50px;
+  }
 
 
+  }
 
-    <div class="principal">
-        <div class='aripa2'>
-            <p>ʚ</p>
-        </div>
-        <div class='spatiu2'>
-            <p>&#160</p>
-        </div>
-   
-        <div class="categ">
-            <h1>speculatie ୨୧</h1>
-            <button class="aboutme" onclick="window.location.href='aboutme.html';">
-                ♡ about me
-            </button>
-            <button class="poems" onclick="window.location.href='poems.html';">
-                ♡ poems
-            </button>
+  @media (max-width: 400px) {
 
-            <button class = "life" onclick="window,location.href='life.html';">
-                ♡ life
-            </button>
-            <button class = "contact" onclick="window.location.href='contact.html';">
-                ♡ contact
-            </button>
-        </div>
+  .categ {
 
-        <div class='spatiu1'>
-            <p>&#160</p>
-        </div>
+    text-align: center;
+  }
 
-        <div class='aripa1'>
-            <p>ɞ</p>
-        </div>
+  .aboutme {
+    font-size: 25px;
+  }
+  .poems {
+    font-size: 25px;
+  }
 
-    </div>
+  .life {
+    font-size: 25px;
+  }
+  .contact {
+    font-size: 25px;
+  }
 
-</body>
+  h1 {
+    font-size: 50px;
+  }
 
- 
-192.168.50.137 www.speculatie.eu 
+  h2 {
 
-</html>
+    font-size: 50px;
+  }
+  
+
+  }
+  </style>
+
+  <html>
+
+  <head>
+      <title>speculatie</title>
+  </head>
+
+  <body>
+
+
+
+      <div class="principal">
+          <div class='aripa2'>
+              <p>ʚ</p>
+          </div>
+          <div class='spatiu2'>
+              <p>&#160</p>
+          </div>
+    
+          <div class="categ">
+              <h1>speculatie ୨୧</h1>
+              <button class="aboutme" onclick="window.location.href='aboutme.html';">
+                  ♡ about me
+              </button>
+              <button class="poems" onclick="window.location.href='poems.html';">
+                  ♡ poems
+              </button>
+
+              <button class = "life" onclick="window,location.href='life.html';">
+                  ♡ life
+              </button>
+              <button class = "contact" onclick="window.location.href='contact.html';">
+                  ♡ contact
+              </button>
+          </div>
+
+          <div class='spatiu1'>
+              <p>&#160</p>
+          </div>
+
+          <div class='aripa1'>
+              <p>ɞ</p>
+          </div>
+
+      </div>
+
+  </body>
+
+  
+
+  </html>
