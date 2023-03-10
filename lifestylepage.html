@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <style>
-   #slider{
-width:80%;
+    #slider{
+width:30%;
 margin:0px auto;
 margin-top: 70px;
 
@@ -71,163 +71,173 @@ background:rgb(7, 67, 213);
 }
 
 @media (max-width:576px){
-#slider{width:100%;
 
-}
 
 
 .controls{
-  font-size:1em;
+ font-size:1em;
 }
 
 #dots-con{
-  display:none;
+ display:none;
 }
 }
+   body {
+       background-image: url('fundal.jpg');
+       background-repeat: no-repeat;
+       background-color: white;
+   }
 
-    body {
-        background-image: url('fundal.jpg');
-        background-repeat: no-repeat;
-        background-color: white;
-    }
+   .title {
 
-    .title {
+       font-size: 35px;
+       color: #7F525D;
+     /*  margin-left: 20px;*/
+       line-height: 0.1;
+       margin-top: 100;
+       padding: 0;
+       float: left;
+   }
 
-        font-size: 35px;
-        color: #7F525D;
-      /*  margin-left: 20px;*/
-        line-height: 0.1;
-        margin-top: 100;
-        padding: 0;
-        float: left;
-    }
+   .back {
+       font-size: 35px;
+       color: #7F525D;
+       margin-left: 20px;
+       line-height: 0.1;
+       margin-top: 100;
+       padding: 0;
+       float: right;
+       cursor: pointer;
+       transition-duration: 0.4s;
+   }
 
-    .back {
-        font-size: 35px;
-        color: #7F525D;
-        margin-left: 20px;
-        line-height: 0.1;
-        margin-top: 100;
-        padding: 0;
-        float: right;
-        cursor: pointer;
-        transition-duration: 0.4s;
-    }
+   .back:hover {
+       color: #E590DE;
+   }
 
-    .back:hover {
-        color: #E590DE;
-    }
+   
 
+   .decor2 {
+       font-size: 35px;
+       color: white;
+       line-height: 0.1;
+       margin-top: 100;
+       padding: 0;
+       float: right;
+       /*margin-left:425px;*/
+   }
+   .decor1 {
+       font-size: 35px;
+       color: white;
+       line-height: 0.1;
+       margin-top: 100;
+       padding: 0;
+       /*float: left;*/
+       /*margin-left:425px;*/
+   }
+
+   .principal>* {
+       display: inline-block;
+   }
+
+   @media (max-width: 1200px) {
+    #slider{width:100%;
+
+}   
     
+    .title {
+           font-size: 55px;
+       }
 
-    .decor2 {
-        font-size: 35px;
-        color: white;
-        line-height: 0.1;
-        margin-top: 100;
-        padding: 0;
-        float: right;
-        /*margin-left:425px;*/
-    }
-    .decor1 {
-        font-size: 35px;
-        color: white;
-        line-height: 0.1;
-        margin-top: 100;
-        padding: 0;
-        /*float: left;*/
-        /*margin-left:425px;*/
-    }
+       .decor {
+           font-size: 55px;
+       }
 
-    .principal>* {
-        display: inline-block;
-    }
+       .back {
+           font-size: 55px;
+       }
+   }
 
-    @media (max-width: 1200px) {
-        .title {
-            font-size: 55px;
-        }
+   @media (max-width: 1000px) {
+    #slider{width:100%;
 
-        .decor {
-            font-size: 55px;
-        }
+}   
+    .title {
+           font-size: 60px;
+       }
 
-        .back {
-            font-size: 55px;
-        }
-    }
+       .decor {
+           font-size: 60px;
+       }
 
-    @media (max-width: 1000px) {
-        .title {
-            font-size: 60px;
-        }
+       .back {
+           font-size: 60px;
+       }
+   }
 
-        .decor {
-            font-size: 60px;
-        }
+   @media (max-width: 800px) {
+    #slider{width:100%;
 
-        .back {
-            font-size: 60px;
-        }
-    }
+}  
+    
+    .title {
+           font-size: 65px;
+       }
 
-    @media (max-width: 800px) {
-        .title {
-            font-size: 65px;
-        }
+       .decor {
+           font-size: 65px;
+       }
 
-        .decor {
-            font-size: 65px;
-        }
+       .back {
+           font-size: 65px;
+       }
+   }
 
-        .back {
-            font-size: 65px;
-        }
-    }
+   @media (max-width: 400px) {
+    #slider{width:100%;
 
-    @media (max-width: 400px) {
-        .title {
-            font-size: 70px;
-        }
+}  
+    .title {
+           font-size: 70px;
+       }
 
-        .decor {
-            font-size: 70px;
-        }
+       .decor {
+           font-size: 70px;
+       }
 
-        .back {
-            font-size: 70px;
-        }
-    }
+       .back {
+           font-size: 70px;
+       }
+   }
 </style>
 
 
 <html>
 
 <body>
-    <div class="principal">
-        
-        <div class="title">
-            <h2>random ♡</h2> 
-            
-        </div>
-
-
-           <div class="decor1">
-            <p>&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
-           </div>
+   <div class="principal">
        
-
-        <div class="back">
-            <h2 onclick="window.location.href='life.html';">୨back୧</h2>
-        </div>
-
-        <div class="decor2">
-            <p>⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
-        </div>
+       <div class="title">
+           <h2>random ♡</h2> 
+           
+       </div>
 
 
-    </div>
+          <div class="decor1">
+           <p>&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+          </div>
+      
 
+       <div class="back">
+           <h2 onclick="window.location.href='life.html';">୨back୧</h2>
+       </div>
+
+       <div class="decor2">
+           <p>⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+       </div>
+
+
+   </div>
     <div id="slider">
         <div class="slide" style="background:white;">
           <img src="lifestyle3.jpg" >
