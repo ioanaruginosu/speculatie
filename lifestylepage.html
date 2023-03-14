@@ -3,13 +3,13 @@
     #slider {
         width: 30%;
         margin: 0px auto;
-        margin-top: 70px;
+        margin-top: 60px;
 
         position: relative;
         overflow: hidden;
         border: 5px solid white;
         box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
-        ;
+        
     }
 
     .slide {
@@ -36,19 +36,19 @@
     }
 
     .controls {
-        width: 5%;
         height: 5%;
+        width: 5%;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 1.5em;
+        font-size: 1.5em;;
         padding: 15px 10px;
         border-radius: 5px;
         background: white;
         cursor: pointer;
     }
 
-    /* .controls:hover {
+    /*.controls:hover {
         
         transition: 0.3s;
     }*/
@@ -59,6 +59,7 @@
 
     #left-arrow {
         left: -1%;
+       
     }
 
     #right-arrow {
@@ -107,17 +108,17 @@
         color: #7F525D;
         /*  margin-left: 20px;*/
         line-height: 0.1;
-        margin-top: 100;
+        margin-top: 0px;
         padding: 0;
-        float: left;
+        text-align: left;
     }
 
     .back {
         font-size: 35px;
         color: #7F525D;
-        margin-left: 20px;
+
         line-height: 0.1;
-        margin-top: 100;
+        margin-top: 0px;
         padding: 0;
         float: right;
         cursor: pointer;
@@ -131,18 +132,32 @@
 
 
     
-    .decor {
+
+    .decor1 {
         font-size: 25px;
         color: white;
         line-height: 0.1;
-        margin-top: 100;
+        margin-top: 0px;
         padding: 0;
-        margin-left: 26vw;
-        /*float: left;*/
+        
+        text-align: left;
+        /*margin-left:425px;*/
+    }
+   /* .decor decor2 {
+        float: right;
+    }*/
+    .decor2 {
+        font-size: 25px;
+        color: white;
+        line-height: 0.1;
+        margin-top: 0px;
+        padding: 0;
+        
+        float: right;
         /*margin-left:425px;*/
     }
 
-    .principal>* {
+   .principal>* {
         display: inline-block;
     }
 
@@ -165,7 +180,7 @@
         }
 
         .controls {
-            font-size: 5em;
+            font-size: 1em;
         }
     }
 
@@ -180,7 +195,7 @@
         }
 
         .decor {
-            font-size: 40px;
+            display: none;
         }
 
         .back {
@@ -203,7 +218,7 @@
         }
 
         .decor {
-            font-size: 45px;
+            display: none;
         }
 
         .back {
@@ -226,7 +241,7 @@
         }
 
         .decor {
-            font-size: 50px;
+            display: none;
         }
 
         .back {
@@ -251,20 +266,24 @@
         </div>
 
 
-        <div class="decor">
-            <p>&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
-            <br>
-            <p>&#160&#160&#160&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+        <div class="decor1">
+            <p>&#160&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+                
+              
           </div>
 
 
         <div class="back">
             <h2 onclick="window.location.href='life.html';">୨back୧</h2>
         </div>
+        <div class="decor2">
+            <p>&#160&#160&#160⋆ ˚｡⋆୨୧˚ ♡ ˚୨୧⋆｡˚ ⋆</p>
+                
+              
+          </div>
+
 
         
-
-
     </div>
     <div id="slider">
         <div class="slide" style="background:white;">
