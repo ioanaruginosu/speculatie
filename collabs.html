@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 
 <style>
-     body {
-       background-image: url('fundal.jpg');
-       background-repeat: no-repeat;
-       background-color: white;
-   }
+    body {
+        background-image: url('fundal.jpg');
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+ 
+    hr {
+        border-top: 1px solid #7F525D;
+    }
+  
+    p {
+        text-align: left;
+        color: #7F525D;
+        font-size: 30px;
+    }
+    div { 
+        
+        text-align: center;
+        padding-bottom: 20px;
+    }
     h1 {
         color: #7F525D;
         text-align: center;
@@ -13,26 +28,25 @@
         transition-duration: 0.4s;
         cursor: pointer;
     }
+    h1:hover {
+        color: #E590DE;
+        
+    }
     hr {
         border-top: 1px solid #7F525D;
     }
-   
-    p {
-        text-align: left;
-
-    }
-    div { 
-        
-        text-align: center;
-        padding-bottom: 20px;
-    }
     .aboutme {
         text-align: center;
-        color: #7F525D;
         background-color: transparent;
+        color: #7F525D;
         border: none;
         cursor: pointer;
         font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .aboutme:hover {
+        color: #E590DE;
+        
     }
     .poems {
         text-align: center;
@@ -41,7 +55,24 @@
         border: none;
         cursor: pointer;
         font-size: 20px;
+        transition-duration: 0.4s;
     }
+    .poems:hover {
+        color: #E590DE;
+        
+    }
+.collabs {
+  text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+}
+.collabs:hover {
+  color: #E590DE;
+}
     .contact {
         text-align: center;
         color: #7F525D;
@@ -49,47 +80,21 @@
         border: none;
         cursor: pointer;
         font-size: 20px;
-    }
-    .collabs {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 50px;
-        color: #7F525D;
-        margin-left: 20px;
-        padding-bottom: 0px;
-        line-height: 0.5;
-        text-align: center;
-    }
-  p {
-    color: #7F525D;
-    text-align: center;
-    font-size: 25px;
-  }
-  h1:hover {
-        color: #E590DE;
-        
-    }
-    .aboutme:hover {
-        color: #E590DE;
-        
-    }
-    .poems:hover {
-        color: #E590DE;
-        
+        transition-duration: 0.4s;
     }
     .contact:hover {
         color: #E590DE;
         
     }
-    .collabs:hover {
-        color: #E590DE;
+    
+    
+    h2 {
         
+        font-size: 50px;
+        color: #7F525D;
+      
+        margin-left: 20px;
+        line-height: 0.1;
     }
     .life{
         text-align: center;
@@ -104,8 +109,14 @@
         color: #E590DE;
         
     }
+p {
+ 
+    margin-top: 3%;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
-    @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .aboutme {
       font-size: 25px;
     }
@@ -137,6 +148,9 @@
 
       font-size: 55px;
     }
+    a {
+      font-size: 40px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -159,6 +173,7 @@
     .contact {
       font-size: 35px;
     }
+
     .collabs {
       font-size: 35px;
     }
@@ -170,13 +185,16 @@
     h2 {
       font-size: 70px;
     }
+    a {
+      font-size: 45px;
+    }
   }
 
   @media (max-width: 800px) {
 
 
 .aboutme {
-  font-size: 38px;
+  font-size: 28px;
 }
 
 .poems {
@@ -187,11 +205,11 @@
   font-size: 38px;
 }
 
-.collabs {
-      font-size: 38px;
-    }
-
 .contact {
+  font-size: 38px;
+}
+
+.collabs {
   font-size: 38px;
 }
 
@@ -208,7 +226,9 @@ h2 {
   font-size: 73px;
 }
 
-
+a {
+      font-size: 50px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -225,14 +245,14 @@ h2 {
   font-size: 42px;
 }
 
-.collabs {
-      font-size: 42px;
-    }
-
 .life {
   font-size: 42px;
 }
 .contact {
+  font-size: 42px;
+}
+
+.collabs {
   font-size: 42px;
 }
 
@@ -244,12 +264,15 @@ h2 {
 
   font-size: 77px;
 }
+a {
+      font-size: 55px;
+    }
 }
 </style>
 
 <html>
 <head>
-<title>Speculatie</title>
+<title>speculatie | contact</title>
 </head>
 <body>
 
@@ -261,49 +284,26 @@ h2 {
         <button class = "poems" onclick="window.location.href='poems.html';">
             ♡ poems
         </button>
-        <button class = "life" onclick="window,location.href='life.html';">
+        <button class = "life" onclick="window.location.href='life.html';">
             ♡ life
         </button>
-        <button class = "contact" onclick="window,location.href='contact.html';">
+        <button class = "contact" onclick="window.location.href='contact.html';">
             ♡ contact
         </button>
-        <button class = "collabs" onclick="window,location.href='collabs.html';">
+        <button class = "collabs" onclick="window.location.href='collabs.html';">
           ♡ collabs
       </button>
        
+ 
+
     </div>
     <hr>
 
 
-    <h2>✩atentie la cioburi</h2>
-    <p>poate că sunt înconjurată de podele de sticlă subțire,<br>
-        poate că e nevoie de un simplu pas mai apăsat<br>
-        și o răsuflare rece<br>
-        să mă deșire.<br>
-        poate e de ajuns să mă privești în ochi ca să îngheț<br>
-        și poate nu-i destul un august târziu<br>
-        să mă topesc.<br>
-        
-        îmi simt sângele fierbând în vene,<br>
-        picioarele alergând<br>
-        și inima bătând<br>
-        în ritmuri și simfonii obscene,<br>
-        am timp, sunt in control și am putere.<br>
-        
-        dar pe loc se face liniste,<br>
-        beznă<br>
-        și lumea se răsucește,<br>
-        sunt protagonista pe o scenă<br>
-        al cărei decor se prăbușește.<br>
-        închid ochii să-mi simt mai tare golul din stomac<br>
-        și cum mă pierd<br>
-        din nou<br>
-        pe mine.<br>
-        sunt singură in mijlocul dezastrului<br>
-        de care toți deja fug;<br>
-        am vrut și eu să fiu mare,<br>
-        se pare că ceilalți nu m-au vrut.</p>
-</body>
+<h2>♡ collabs</h2>
 
+<p onclick="window.location.href='coquette.html';">🎀 @speculatie x @_coquettebeads</p>
+
+</body>
 
 </html>

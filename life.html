@@ -1,477 +1,509 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<style>
-    body {
-        background-image: url('fundal.jpg');
-        background-repeat: no-repeat;
-        background-color: white;
-    }
+    <style>
+        body {
+            background-image: url('fundal.jpg');
+            background-repeat: no-repeat;
+            background-color: white;
+        }
 
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-    img {
-        width: 50%;
-        height: auto;
-        margin-left: 20px;
-        float: left;
+        hr {
+            border-top: 1px solid #7F525D;
+        }
+        img {
+            width: 50%;
+            height: auto;
+            margin-left: 20px;
+            float: left;
+            
+        /* padding-right: 30px;*/
+        }
+
+        .center {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 50%;
+        }
+        p {
+            text-align: left;
+            color: #7F525D;
+            font-size: 25px;
+        }
+        div { 
+            
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #7F525D;
+            text-align: center;
+            font-size: 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        h1:hover {
+            color: #E590DE;
+            
+        }
+        hr {
+            border-top: 1px solid #7F525D;
+        }
+        .aboutme {
+            text-align: center;
+            background-color: transparent;
+            color: #7F525D;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .aboutme:hover {
+            color: #E590DE;
+            
+        }
+        .poems {
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .poems:hover {
+            color: #E590DE;
+            
+        }
+
+        .collabs {
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .collabs:hover {
+            color: #E590DE;
+        }
+        .contact {
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .contact:hover {
+            color: #E590DE;
+            
+        }
         
-       /* padding-right: 30px;*/
-    }
-
-    .center {
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
-        height: 50%;
-    }
-    p {
-        text-align: left;
-        color: #7F525D;
-        font-size: 25px;
-    }
-    div { 
         
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    h1 {
-        color: #7F525D;
-        text-align: center;
-        font-size: 30px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    h1:hover {
-        color: #E590DE;
+        h2 {
+            
+            font-size: 50px;
+            color: #7F525D;
         
-    }
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-    .aboutme {
-        text-align: center;
-        background-color: transparent;
-        color: #7F525D;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .aboutme:hover {
-        color: #E590DE;
-        
-    }
-    .poems {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .poems:hover {
-        color: #E590DE;
-        
-    }
-    .contact {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .contact:hover {
-        color: #E590DE;
-        
-    }
-    
-    
-    h2 {
-        
-        font-size: 50px;
-        color: #7F525D;
-    
-        margin-left: 20px;
-        line-height: 0.1;
-    }
-    .life{
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .life:hover {
-        color: #E590DE;
-        
-    }
+            margin-left: 20px;
+            line-height: 0.1;
+        }
+        .life{
+            text-align: center;
+            color: #7F525D;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .life:hover {
+            color: #E590DE;
+            
+        }
 
-    .container
-    {
-        font-family: arial;
-font-size: 24px;
-margin: 5vw;
-width: 100%;
-height: 25vw;
+        .container
+        {
+            font-family: arial;
+    font-size: 24px;
+    margin: 5vw;
+    width: 100%;
+    height: 25vw;
 
-/* Setup */
-position: relative;
-    }
+    /* Setup */
+    position: relative;
+        }
 
-    .photos {
-width: 100%;
-height: auto;
-
-
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-}
-
-
-/*#gallery {
-    -webkit-column-count: 4;
-    -webkit-column-gap: 2px;
-    -moz-column-count: 4;
-    -moz-column-gap: 2px;
-    column-count: 4;
-    column-gap: 2px;
-}
-
-#gallery img {
+        .photos {
     width: 100%;
     height: auto;
-    margin-bottom: 0px;
-    margin-top:0px;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-border-radius: 4px;
-padding: 5px;
-height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+
+
+    /*#gallery {
+        -webkit-column-count: 4;
+        -webkit-column-gap: 2px;
+        -moz-column-count: 4;
+        -moz-column-gap: 2px;
+        column-count: 4;
+        column-gap: 2px;
+    }
+
+    #gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        margin-top:0px;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    height: auto;
+        
+    }*/
+
+
+
+
+    img {
+        width: 20%;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    height: auto;
+    }
+
+    img:hover {
+    box-shadow: 0 0 2px 1px #7F525D;
+    }
+    @media (max-width: 1200px) {
+        .aboutme {
+        font-size: 25px;
+        }
+
+        .poems {
+        font-size: 25px;
+        }
+
+        .life {
+        font-size: 25px;
+        }
+
+        .collabs {
+            font-size: 25px;
+        }
+
+        .contact {
+        font-size: 25px;
+        }
+
+        .categ {
+        text-align: center;
+        }
+
+        h1 {
+        font-size: 35px;
+        }
+
+        h2 {
+
+        font-size: 55px;
+        }
+
+    /* #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+
+    }*/
+
+    img {
+        width: 40%;
+    }
+    .container
+        {
+            font-family: arial;
+    font-size: 24px;
+    margin: 5vw;
+    width: 100%;
+    height: 120vw;
+
+    /* Setup */
+    position: relative;
+        }
+
+        .photos {
+    width: 100%;
+    height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+
+    }
+
+    @media (max-width: 1000px) {
+        .categ {
+        text-align: center;
+        }
+
+        .aboutme {
+        font-size: 35px;
+        }
+
+        .poems {
+        font-size: 35px;
+        }
+
+        .collabs{
+            font-size: 35px;
+        }
+
+        .life {
+        font-size: 35px;
+        }
+
+        .contact {
+        font-size: 35px;
+        }
+
+        h1 {
+        font-size: 50px;
+        }
+
+        h2 {
+        font-size: 70px;
+        }
+
+    /* #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+
+    }*/
+
+    img {
+        width: 40%;
+    }
+    .container
+        {
+            font-family: arial;
+    font-size: 24px;
+    margin: 5vw;
+    width: 100%;
+    height: 120vw;
+
+
+    position: relative;
+        }
+
+        .photos {
+    width: 100%;
+    height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+
+    }
+
+    @media (max-width: 800px) {
+
+
+        .aboutme {
+        font-size: 38px;
+        }
+
+        .poems {
+        font-size: 38px;
+        }
+
+        .life {
+        font-size: 38px;
+        }
+
+        .contact {
+        font-size: 38px;
+        }
+
+        .collabs {
+            font-size: 38px;
+        }
+
+        .categ {
+        text-align: center;
+        }
+
+        h1 {
+        font-size: 53px;
+        }
+
+
+        h2 {
+        font-size: 73px;
+        }
+
+    /* #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+    }*/
+    img {
+        width: 40%;
+    }
+    .container
+        {
+            font-family: arial;
+    font-size: 24px;
+    margin: 5vw;
+    width: 100%;
+    height: 120vw;
+
+    /* Setup */
+    position: relative;
+        }
+
+        .photos {
+    width: 100%;
+    height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+    }
+
+    @media (max-width: 400px) {
+
+        .categ {
+
+        text-align: center;
+        }
+
+        .aboutme {
+        font-size: 42px;
+        }
+        .poems {
+        font-size: 42px;
+        }
+
+        .life {
+        font-size: 42px;
+        }
+        .contact {
+        font-size: 42px;
+        }
+
+        .collabs {
+            font-size: 42px;
+        }
+
+        h1 {
+        font-size: 57px;
+        }
+
+        h2 {
+
+        font-size: 77px;
+        }
+
+    /* #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+    }*/
+    img {
+        width: 40%;
+    }
+    .container
+        {
+            font-family: arial;
+    font-size: 24px;
+    margin: 5vw;
+    width: 100%;
+    height: 120vw;
+
+    /* Setup */
+    position: relative;
+        }
+
+        .photos {
+    width: 100%;
+    height: auto;
+
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+    }
+
+    </style>
+
+    <html>
+    <head>
+    <title>speculatie | life</title>
+    </head>
+    <body>
+
+        <div class="categ">
+            <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
+            <button class="aboutme" onclick="window.location.href='aboutme.html';">
+                ♡ about me
+            </button>
+            <button class = "poems" onclick="window.location.href='poems.html';">
+                ♡ poems
+            </button>
+            <button class = "life" onclick="window.location.href='life.html';">
+                ♡ life
+            </button>
+            <button class = "contact" onclick="window.location.href='contact.html';">
+                ♡ contact
+            </button>
+            <button class = "collabs" onclick="window.location.href='collabs.html';">
+                ♡ collabs
+            </button>
+        </div>
+            
+        </div>
+        <hr>
+        <h2>♡ life</h2>
     
-}*/
-
-
-
-
-img {
-    width: 20%;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-border-radius: 4px;
-padding: 5px;
-height: auto;
-}
-
-img:hover {
-box-shadow: 0 0 2px 1px #7F525D;
-}
-@media (max-width: 1200px) {
-    .aboutme {
-    font-size: 25px;
-    }
-
-    .poems {
-    font-size: 25px;
-    }
-
-    .life {
-    font-size: 25px;
-    }
-
-    .contact {
-    font-size: 25px;
-    }
-
-    .categ {
-    text-align: center;
-    }
-
-    h1 {
-    font-size: 35px;
-    }
-
-    h2 {
-
-    font-size: 55px;
-    }
-
-   /* #gallery {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
-
-}*/
-
-img {
-    width: 40%;
-}
-.container
-    {
-        font-family: arial;
-font-size: 24px;
-margin: 5vw;
-width: 100%;
-height: 120vw;
-
-/* Setup */
-position: relative;
-    }
-
-    .photos {
-width: 100%;
-height: auto;
-
-
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-}
-
-}
-
-@media (max-width: 1000px) {
-    .categ {
-    text-align: center;
-    }
-
-    .aboutme {
-    font-size: 35px;
-    }
-
-    .poems {
-    font-size: 35px;
-    }
-
-    .life {
-    font-size: 35px;
-    }
-
-    .contact {
-    font-size: 35px;
-    }
-
-    h1 {
-    font-size: 50px;
-    }
-
-    h2 {
-    font-size: 70px;
-    }
-
-   /* #gallery {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
-
-}*/
-
-img {
-    width: 40%;
-}
-.container
-    {
-        font-family: arial;
-font-size: 24px;
-margin: 5vw;
-width: 100%;
-height: 120vw;
-
-
-position: relative;
-    }
-
-    .photos {
-width: 100%;
-height: auto;
-
-
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-}
-
-}
-
-@media (max-width: 800px) {
-
-
-    .aboutme {
-    font-size: 38px;
-    }
-
-    .poems {
-    font-size: 38px;
-    }
-
-    .life {
-    font-size: 38px;
-    }
-
-    .contact {
-    font-size: 38px;
-    }
-
-    .categ {
-    text-align: center;
-    }
-
-    h1 {
-    font-size: 53px;
-    }
-
-
-    h2 {
-    font-size: 73px;
-    }
-
-   /* #gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-}*/
-img {
-    width: 40%;
-}
-.container
-    {
-        font-family: arial;
-font-size: 24px;
-margin: 5vw;
-width: 100%;
-height: 120vw;
-
-/* Setup */
-position: relative;
-    }
-
-    .photos {
-width: 100%;
-height: auto;
-
-
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-}
-}
-
-@media (max-width: 400px) {
-
-    .categ {
-
-    text-align: center;
-    }
-
-    .aboutme {
-    font-size: 42px;
-    }
-    .poems {
-    font-size: 42px;
-    }
-
-    .life {
-    font-size: 42px;
-    }
-    .contact {
-    font-size: 42px;
-    }
-
-    h1 {
-    font-size: 57px;
-    }
-
-    h2 {
-
-    font-size: 77px;
-    }
-
-   /* #gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-}*/
-img {
-    width: 40%;
-}
-.container
-    {
-        font-family: arial;
-font-size: 24px;
-margin: 5vw;
-width: 100%;
-height: 120vw;
-
-/* Setup */
-position: relative;
-    }
-
-    .photos {
-width: 100%;
-height: auto;
-
-
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-}
-}
-
-</style>
-
-<html>
-<head>
-<title>speculatie | life</title>
-</head>
-<body>
-
-    <div class="categ">
-        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
-        <button class="aboutme" onclick="window.location.href='aboutme.html';">
-            ♡ about me
-        </button>
-        <button class = "poems" onclick="window.location.href='poems.html';">
-            ♡ poems
-        </button>
-        <button class = "life" onclick="window.location.href='life.html';">
-            ♡ life
-        </button>
-        <button class = "contact" onclick="window.location.href='contact.html';">
-            ♡ contact
-        </button>
+        <div class="container">
+        <div class="photos">
+            <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" >
+        
+            <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" >
+            
+            <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" >
+            
+            <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';">
+        
+        </div>
     </div>
         
-    </div>
-    <hr>
-    <h2>♡ life</h2>
-   
-    <div class="container">
-    <div class="photos">
-        <img src="food inima.jpg" onclick="window.location.href='foodpage.html';" >
-    
-        <img src="travel inima.jpg" onclick="window.location.href='travelpage.html';" >
+            
         
-        <img src="mitski inima 2.jpg" onclick="window.location.href='mitskipage.html';" >
         
-        <img src="random inima.jpg" onclick="window.location.href='lifestylepage.html';">
-    
-    </div>
-</div>
-    
-    
-    
-    
 
 
-</body>
+    </body>
 
 
-</html>
+    </html>

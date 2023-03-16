@@ -50,6 +50,14 @@
         cursor: pointer;
         font-size: 20px;
     }
+    .collabs {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
     h2 {
         font-size: 50px;
         color: #7F525D;
@@ -79,6 +87,10 @@
         color: #E590DE;
         
     }
+    .collabs:hover {
+        color: #E590DE;
+        
+    }
     .life{
         text-align: center;
         color: #7F525D;
@@ -92,6 +104,7 @@
         color: #E590DE;
         
     }
+
     @media (max-width: 1200px) {
     .aboutme {
       font-size: 25px;
@@ -106,6 +119,9 @@
     }
 
     .contact {
+      font-size: 25px;
+    }
+    .collabs {
       font-size: 25px;
     }
 
@@ -143,6 +159,9 @@
     .contact {
       font-size: 35px;
     }
+    .collabs {
+      font-size: 35px;
+    }
 
     h1 {
       font-size: 50px;
@@ -157,7 +176,7 @@
 
 
 .aboutme {
-  font-size: 28px;
+  font-size: 38px;
 }
 
 .poems {
@@ -167,6 +186,10 @@
 .life {
   font-size: 38px;
 }
+
+.collabs {
+      font-size: 38px;
+    }
 
 .contact {
   font-size: 38px;
@@ -201,6 +224,10 @@ h2 {
 .poems {
   font-size: 42px;
 }
+
+.collabs {
+      font-size: 42px;
+    }
 
 .life {
   font-size: 42px;
@@ -237,9 +264,12 @@ h2 {
         <button class = "life" onclick="window,location.href='life.html';">
             ♡ life
         </button>
-        <button class = "contact">
+        <button class = "contact" onclick="window,location.href='contact.html';">
             ♡ contact
         </button>
+        <button class = "collabs" onclick="window,location.href='collabs.html';">
+          ♡ collabs
+      </button>
        
     </div>
     <hr>

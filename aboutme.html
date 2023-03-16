@@ -15,12 +15,19 @@
         height: auto;
         margin-left: 20px;
         float: left;
-        padding-right: 30px;
+        border: 5px solid white;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+       
     }
+    .descriere {
+      column-gap: 10px;
+    }
+
     .descriere p {
         text-align: left;
         color: #7F525D;
         font-size: 40px;
+        margin-left: 20px;
     }
     div { 
         
@@ -68,6 +75,21 @@
         color: #E590DE;
         
     }
+
+    .collabs {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .collabs:hover {
+        color: #E590DE;
+        
+    }
+
     .contact {
         text-align: center;
         color: #7F525D;
@@ -125,6 +147,9 @@
       font-size: 25px;
     }
 
+    .collabs {
+      font-size: 25px;
+    }
     .categ {
       text-align: center;
     }
@@ -149,6 +174,10 @@
     }
 
     .poems {
+      font-size: 35px;
+    }
+
+    .collabs {
       font-size: 35px;
     }
 
@@ -183,6 +212,10 @@
 }
 
 .poems {
+  font-size: 38px;
+}
+
+.collabs {
   font-size: 38px;
 }
 
@@ -231,6 +264,10 @@ h2 {
   font-size: 42px;
 }
 
+.collabs {
+  font-size: 42px;
+}
+
 .life {
   font-size: 42px;
 }
@@ -270,12 +307,15 @@ h2 {
         <button class = "poems" onclick="window.location.href='poems.html';">
             ♡ poems
         </button>
-        <button class = "life" onclick="window,location.href='life.html';">
+        <button class = "life" onclick="window.location.href='life.html';">
             ♡ life
         </button>
         <button class = "contact" onclick="window.location.href='contact.html';">
             ♡ contact
         </button>
+        <button class = "collabs" onclick="window.location.href='collabs.html';">
+          ♡ collabs
+      </button>
        
     </div>
     <hr>
