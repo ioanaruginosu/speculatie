@@ -1,39 +1,11 @@
 <!DOCTYPE html>
 
 <style>
-    body {
+     body {
        
-       background: linear-gradient(pink, white, pink) ;
-    
+       background-image: repeating-linear-gradient(pink, white, pink);
+     
      }
- 
-    hr {
-        border-top: 1px solid #7F525D;
-
-    }
-  
-    p {
-        text-align: left;
-        color: #7F525D;
-        font-size: 30px;
-    }
-    p2{
-      text-align: left;
-        color: white;
-        font-size: 30px;
-        margin-left: 2%;
-    }
-    p3{
-      text-align: left;
-        color: white;
-        font-size: 30px;
-        margin-left: 10%;
-    }
-    div { 
-        
-        text-align: center;
-        padding-bottom: 20px;
-    }
     h1 {
         color: #7F525D;
         text-align: center;
@@ -41,25 +13,26 @@
         transition-duration: 0.4s;
         cursor: pointer;
     }
-    h1:hover {
-        color: #E590DE;
-        
-    }
     hr {
         border-top: 1px solid #7F525D;
     }
+   
+    p {
+        text-align: left;
+
+    }
+    div { 
+        
+        text-align: center;
+        padding-bottom: 20px;
+    }
     .aboutme {
         text-align: center;
-        background-color: transparent;
         color: #7F525D;
+        background-color: transparent;
         border: none;
         cursor: pointer;
         font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .aboutme:hover {
-        color: #E590DE;
-        
     }
     .poems {
         text-align: center;
@@ -68,24 +41,7 @@
         border: none;
         cursor: pointer;
         font-size: 20px;
-        transition-duration: 0.4s;
     }
-    .poems:hover {
-        color: #E590DE;
-        
-    }
-.collabs {
-  text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-}
-.collabs:hover {
-  color: #E590DE;
-}
     .contact {
         text-align: center;
         color: #7F525D;
@@ -93,21 +49,47 @@
         border: none;
         cursor: pointer;
         font-size: 20px;
-        transition-duration: 0.4s;
+    }
+    .collabs {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 50px;
+        color: #7F525D;
+        margin-left: 20px;
+        padding-bottom: 0px;
+        line-height: 0.5;
+        text-align: center;
+    }
+  p {
+    color: #7F525D;
+    text-align: center;
+    font-size: 25px;
+  }
+  h1:hover {
+        color: #E590DE;
+        
+    }
+    .aboutme:hover {
+        color: #E590DE;
+        
+    }
+    .poems:hover {
+        color: #E590DE;
+        
     }
     .contact:hover {
         color: #E590DE;
         
     }
-    
-    
-    h2 {
+    .collabs:hover {
+        color: #E590DE;
         
-        font-size: 50px;
-        color: #7F525D;
-      
-        margin-left: 20px;
-        line-height: 0.1;
     }
     .life{
         text-align: center;
@@ -122,18 +104,8 @@
         color: #E590DE;
         
     }
-p {
- 
-    margin-top: 3%;
-    margin-left: 20px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-p:hover {
-  color: #E590DE;
-}
 
-@media (max-width: 1200px) {
+    @media (max-width: 1200px) {
     .aboutme {
       font-size: 25px;
     }
@@ -164,9 +136,6 @@ p:hover {
     h2 {
 
       font-size: 55px;
-    }
-    p {
-      font-size: 40px;
     }
 }
 
@@ -190,7 +159,6 @@ p:hover {
     .contact {
       font-size: 35px;
     }
-
     .collabs {
       font-size: 35px;
     }
@@ -202,16 +170,13 @@ p:hover {
     h2 {
       font-size: 70px;
     }
-    p {
-      font-size: 45px;
-    }
   }
 
   @media (max-width: 800px) {
 
 
 .aboutme {
-  font-size: 28px;
+  font-size: 38px;
 }
 
 .poems {
@@ -222,11 +187,11 @@ p:hover {
   font-size: 38px;
 }
 
-.contact {
-  font-size: 38px;
-}
-
 .collabs {
+      font-size: 38px;
+    }
+
+.contact {
   font-size: 38px;
 }
 
@@ -243,9 +208,7 @@ h2 {
   font-size: 73px;
 }
 
-p {
-      font-size: 50px;
-    }
+
 }
 
 @media (max-width: 400px) {
@@ -262,14 +225,14 @@ p {
   font-size: 42px;
 }
 
+.collabs {
+      font-size: 42px;
+    }
+
 .life {
   font-size: 42px;
 }
 .contact {
-  font-size: 42px;
-}
-
-.collabs {
   font-size: 42px;
 }
 
@@ -281,15 +244,12 @@ h2 {
 
   font-size: 77px;
 }
-p {
-      font-size: 55px;
-    }
 }
 </style>
 
 <html>
 <head>
-<title>speculatie | contact</title>
+<title>Speculatie</title>
 </head>
 <body>
 
@@ -312,19 +272,40 @@ p {
           🧸 collabs
         </button>
        
- 
-
     </div>
     <hr>
 
 
-<h2>🧸 collabs</h2>
-
-<p onclick="window.location.href='coquette.html';">🎀 @speculatie x @_coquettebeads</p>
-<p2>* .♡ *:･ﾟ✧ ⋆ ࣪.* ࣪.⋆ * .♡ *:･ﾟ✧ ⋆ ࣪.* ࣪.⋆</p2>
-<br>
-<p3>more soon</p3>
-
+    <h2>✩borderline</h2>
+    <p>în jurul meu sunt cioburi<br>
+        sărite din multiple lovituri<br>
+        dese și apăsate de-un ciocan<br>
+        într-un suflet mult prea diafan.<br>
+        <br>
+        când s-a spart era prea mare mătura<br> 
+        și le-am lăsat acolo să joc șotron cu ele<br>
+        am cerut ajutor, dar asta a fost încurcătura<br> 
+        am primit doar un ecou, și încă un ciocan în ele.<br>
+        <br>
+        au rămas acolo toate<br>
+        și eu călcam mereu pe ele<br>
+        poate de asta simt cu atâta intensitate<br> 
+        podeaua, tălpile și sentimentele.<br>
+        <br>
+        supărarea se transformă-n catastrofă<br>
+        furia mintea mi-o îngheață și sucește<br> 
+        mă învață noi mișcări, ai zice că e coregrafă<br>
+        însă tot corpul mi-l nenorocește.<br>
+        <br>
+        am scăpat cu viață<br>
+        dar ce urmează de acum<br>
+        nu se mai numește viață.<br>
+        <br>
+        poate de asta tristețea este crima<br>
+        prin care mă deșir orice aș păți<br>
+        și iubirea este prima<br>
+        și ultima ce-o voi simți.</p>
 </body>
+
 
 </html>
