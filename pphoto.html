@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<style>
+    body {
+       
+       background-image: repeating-linear-gradient(pink, white, pink);
+     
+     }
+ 
+    hr {
+        border-top: 1px solid #7F525D;
+    }
+   
+    div { 
+        
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    h1 {
+        color: #7F525D;
+        text-align: center;
+        font-size: 30px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    h1:hover {
+        color: #E590DE;
+        
+    }
+    
+    hr {
+        border-top: 1px solid #7F525D;
+    }
+    img {
+        margin-left: 33%;
+       padding: 1%;
+        width: 35%;
+        height: auto;
+        display: block;
+    }
+    .img4 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.4s;
+    }
+    .hide4 {
+        display: none;
+        position: absolute;
+        margin-left: 33.6%;
+        margin-top: -59.4%;
+        padding-top: 7%;
+        padding-bottom: 6%;
+        width: 34.7%;
+        height: auto;
+        font-size: 150%;
+        background: white;
+    }
+    .img4:hover  + .hide4 {
+        display: block;
+        pointer-events: none;
+    }
+
+    .img5 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.4s;
+    }
+    .hide5 {
+        display: none;
+        position: absolute;
+        margin-left: 33.6%;
+        margin-top: -42.4%;
+        padding-top: 3%;
+        padding-bottom: 3.2%;
+        width: 34.7%;
+        height: auto;
+        font-size: 150%;
+        background: white;
+    }
+    .img5:hover  + .hide5 {
+        display: block;
+        pointer-events: none;
+    }
+    .aboutme {
+        text-align: center;
+        background-color: transparent;
+        color: #7F525D;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .aboutme:hover {
+        color: #E590DE;
+        
+    }
+    .poems {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .poems:hover {
+        color: #E590DE;
+        
+
+    }
+    .pphoto {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.4s;
+  }
+
+  .pphoto:hover {
+    color: #E590DE;
+
+  }
+
+    .collabs {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .collabs:hover {
+        color: #E590DE;
+        
+    }
+
+    .contact {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .contact:hover {
+        color: #E590DE;
+        
+    }
+    
+    
+    h2 {
+        
+        font-size: 50px;
+        color: #7F525D;
+      
+        margin-left: 20px;
+        line-height: 0.1;
+    }
+    .life{
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    .life:hover {
+        color: #E590DE;
+        
+    }
+   
+    .aboutme {
+        text-align: center;
+    }
+    @media (max-width: 1200px) {
+    .aboutme {
+      font-size: 25px;
+    }
+
+    .poems {
+      font-size: 25px;
+    }
+
+    .life {
+      font-size: 25px;
+    }
+
+    .contact {
+      font-size: 25px;
+    }
+    .pphoto {
+      font-size: 25px;
+    }
+    .collabs {
+      font-size: 25px;
+    }
+    .categ {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+
+      font-size: 55px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .categ {
+      text-align: center;
+    }
+
+    .aboutme {
+      font-size: 35px;
+    }
+
+    .poems {
+      font-size: 35px;
+    }
+
+    .collabs {
+      font-size: 35px;
+    }
+
+    .life {
+      font-size: 35px;
+    }
+
+    .contact {
+      font-size: 35px;
+    }
+    .pphoto {
+      font-size: 35px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 70px;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+
+
+.aboutme {
+  font-size: 28px;
+}
+
+.poems {
+  font-size: 38px;
+}
+
+.collabs {
+  font-size: 38px;
+}
+
+.life {
+  font-size: 38px;
+}
+
+.contact {
+  font-size: 38px;
+}
+.pphoto {
+      font-size: 38px;
+    }
+.categ {
+  text-align: center;
+}
+
+h1 {
+  font-size: 53px;
+}
+
+
+h2 {
+  font-size: 73px;
+}
+
+
+
+}
+
+@media (max-width: 400px) {
+
+.categ {
+
+  text-align: center;
+}
+
+.aboutme {
+  font-size: 42px;
+}
+.poems {
+  font-size: 42px;
+}
+
+.collabs {
+  font-size: 42px;
+}
+
+.life {
+  font-size: 42px;
+}
+.contact {
+  font-size: 42px;
+}
+.pphoto {
+      font-size: 42px;
+    }
+h1 {
+  font-size: 57px;
+}
+
+h2 {
+
+  font-size: 77px;
+}
+
+}
+</style>
+<html>
+<head>
+<title>speculatie | about me</title>
+</head>
+<body>
+
+    <div>
+        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
+        <button class="aboutme" onclick="window.location.href='aboutme.html';">
+          🍒 about me
+        </button>
+        <button class="poems" onclick="window.location.href='poems.html';">
+          💌 poems
+        </button>
+        <button class="pphoto" onclick="window.location.href='pphoto.html';">
+          🌸 poems on photos
+        </button>
+        <button class="life" onclick="window,location.href='life.html';">
+          🌷 life
+        </button>
+        <button class="contact" onclick="window.location.href='contact.html';">
+          🍓 contact
+        </button>
+        <button class="collabs" onclick="window.location.href='collabs.html';">
+          🧸 collabs
+        </button>
+       
+    </div>
+    <hr>
+    <h2>🌸 poems on photos</h2>
+
+        <img src="pphoto1.jpg">
+        <img src="pphoto2.jpg">
+    
+    <img src="pphoto3.jpg">
+    <div class="img4" >
+        <img  src="photo4.jpg">
+        </div>
+        <div class="hide4">sunt cel mai puțin important aspect din viața mea<br>
+        ceea ce când eram un copil<br> 
+        vinovat de toate<br>
+        îmi dădea o obsesie disperată<br>
+        că poate dacă orice merită<br>
+        mai mult loc în biografia mea<br>
+        decât mine<br>
+        atunci voi lua și eu parte<br> 
+        la măcar o fraza<br>
+        din a altora.<br>
+        și așa mi-am petrecut întreaga existență<br>
+        în lumea asta<br>
+        că am crezut că-i destinată<br>
+        să caute ceva s-o completeze.<br>
+        drumul meu mergea mereu spre validare<br>
+        și n-a ajuns o sursă,<br>
+        a trebuit să le găsesc pe toate.<br>
+        și când aleea s-a despicat<br> 
+        și a apărut un drum<br> 
+        ce ducea spre iubirea de sine<br> 
+        am continuat să merg<br>
+        pe lângă el<br>
+        c-am zis că<br>
+        lasă, c-am să mă iubesc<br>
+        dar mai întâi s-o facă ceilalți.</div>
+   
+    
+    <div class="img5" >
+        <img src="pphoto9.jpg">
+    </div>
+    <div class="hide5">
+        sculatul de dimineață<br>
+e degeaba când nu ești tu priveliștea<br> 
+și când nu mă mângâi blând pe față<br>
+ca să-mi potolești neliniștea.<br>
+<br>
+ieri n-am avut niciun succes<br>
+doar o cădere nervoasă<br>
+cu durata de o zi întreagă,<br>
+dar azi m-am răsucit în pat<br>
+și te-am văzut pe tine<br>
+respirai amplu, aproape sforăind<br>
+mereu te trezești mai târziu decât mine<br>
+iar eu mă-ndrăgostesc de tine doar privind.<br>
+îți pun plapuma mai bine<br>
+că noaptea o iau mereu doar pentru mine<br>
+te strâng din nou în brațe<br>
+și tu, prin somn, pe mine,<br>
+poate n-am să fac nimic nici astăzi<br>
+dar cu siguranță te iubesc pe tine.
+    </div>
+    <img class="img6" src="pphoto5.jpg">
+    <img class="img7" src="pphoto7.jpg">
+    <img src="pphoto6.jpg">
+    <img class="img9"src="pphoto8.jpg">
+   </body>

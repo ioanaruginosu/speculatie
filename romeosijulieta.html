@@ -1,111 +1,141 @@
 <!DOCTYPE html>
 
 <style>
-     body {
-       
-       background-image: repeating-linear-gradient(pink, white, pink);
-     
-     }
-    h1 {
-        color: #7F525D;
-        text-align: center;
-        font-size: 30px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-   
-    p {
-        text-align: left;
+  body {
 
-    }
-    div { 
-        
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .aboutme {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    .poems {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    .contact {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    .collabs {
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 50px;
-        color: #7F525D;
-        margin-left: 20px;
-        padding-bottom: 0px;
-        line-height: 0.5;
-        text-align: center;
-    }
+    background-image: repeating-linear-gradient(pink, white, pink);
+
+  }
+
+  h1 {
+    color: #7F525D;
+    text-align: center;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  hr {
+    border-top: 1px solid #7F525D;
+  }
+
+  p {
+    text-align: left;
+
+  }
+
+  div {
+
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .aboutme {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .poems {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .contact {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .collabs {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .pphoto {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 50px;
+    color: #7F525D;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    line-height: 0.5;
+    text-align: center;
+  }
+
   p {
     color: #7F525D;
     text-align: center;
     font-size: 25px;
   }
-  h1:hover {
-        color: #E590DE;
-        
-    }
-    .aboutme:hover {
-        color: #E590DE;
-        
-    }
-    .poems:hover {
-        color: #E590DE;
-        
-    }
-    .contact:hover {
-        color: #E590DE;
-        
-    }
-    .collabs:hover {
-        color: #E590DE;
-        
-    }
-    .life{
-        text-align: center;
-        color: #7F525D;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition-duration: 0.4s;
-    }
-    .life:hover {
-        color: #E590DE;
-        
-    }
 
-    @media (max-width: 1200px) {
+  h1:hover {
+    color: #E590DE;
+
+  }
+
+  .pphoto:hover {
+    color: #E590DE;
+
+  }
+
+  .aboutme:hover {
+    color: #E590DE;
+
+  }
+
+  .poems:hover {
+    color: #E590DE;
+
+  }
+
+  .contact:hover {
+    color: #E590DE;
+
+  }
+
+  .collabs:hover {
+    color: #E590DE;
+
+  }
+
+  .life {
+    text-align: center;
+    color: #7F525D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.4s;
+  }
+
+  .life:hover {
+    color: #E590DE;
+
+  }
+
+  @media (max-width: 1200px) {
     .aboutme {
       font-size: 25px;
     }
@@ -121,7 +151,12 @@
     .contact {
       font-size: 25px;
     }
+
     .collabs {
+      font-size: 25px;
+    }
+
+    .pphoto {
       font-size: 25px;
     }
 
@@ -137,9 +172,9 @@
 
       font-size: 55px;
     }
-}
+  }
 
-@media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     .categ {
       text-align: center;
     }
@@ -159,7 +194,12 @@
     .contact {
       font-size: 35px;
     }
+
     .collabs {
+      font-size: 35px;
+    }
+
+    .pphoto {
       font-size: 35px;
     }
 
@@ -175,105 +215,119 @@
   @media (max-width: 800px) {
 
 
-.aboutme {
-  font-size: 38px;
-}
-
-.poems {
-  font-size: 38px;
-}
-
-.life {
-  font-size: 38px;
-}
-
-.collabs {
+    .aboutme {
       font-size: 38px;
     }
 
-.contact {
-  font-size: 38px;
-}
+    .poems {
+      font-size: 38px;
+    }
 
-.categ {
-  text-align: center;
-}
+    .life {
+      font-size: 38px;
+    }
 
-h1 {
-  font-size: 53px;
-}
+    .collabs {
+      font-size: 38px;
+    }
+
+    .contact {
+      font-size: 38px;
+    }
+
+    .pphoto {
+      font-size: 38px;
+    }
+
+    .categ {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 53px;
+    }
 
 
-h2 {
-  font-size: 73px;
-}
+    h2 {
+      font-size: 73px;
+    }
 
 
-}
+  }
 
-@media (max-width: 400px) {
+  @media (max-width: 400px) {
 
-.categ {
+    .categ {
 
-  text-align: center;
-}
+      text-align: center;
+    }
 
-.aboutme {
-  font-size: 42px;
-}
-.poems {
-  font-size: 42px;
-}
-
-.collabs {
+    .aboutme {
       font-size: 42px;
     }
 
-.life {
-  font-size: 42px;
-}
-.contact {
-  font-size: 42px;
-}
+    .poems {
+      font-size: 42px;
+    }
 
-h1 {
-  font-size: 57px;
-}
+    .collabs {
+      font-size: 42px;
+    }
 
-h2 {
+    .life {
+      font-size: 42px;
+    }
 
-  font-size: 77px;
-}
-}
+    .contact {
+      font-size: 42px;
+    }
+
+    .pphoto {
+      font-size: 42px;
+    }
+
+    h1 {
+      font-size: 57px;
+    }
+
+    h2 {
+
+      font-size: 77px;
+    }
+  }
 </style>
 
 <html>
+
 <head>
-<title>Speculatie</title>
+  <title>Speculatie</title>
 </head>
+
 <body>
 
-    <div class="categ">
-        <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
-        <button class="aboutme" onclick="window.location.href='aboutme.html';">
-          🍒 about me
-        </button>
-        <button class="poems" onclick="window.location.href='poems.html';">
-          💌 poems
-        </button>
+  <div class="categ">
+    <h1 onclick="window.location.href='index.html';">speculatie ୨୧</h1>
+    <button class="aboutme" onclick="window.location.href='aboutme.html';">
+      🍒 about me
+    </button>
+    <button class="poems" onclick="window.location.href='poems.html';">
+      💌 poems
+    </button>
+    <button class="pphoto" onclick="window.location.href='pphoto.html';">
+      🌸 poems on photos
+    </button>
+    <button class="life" onclick="window,location.href='life.html';">
+      🌷 life
+    </button>
+    <button class="contact" onclick="window.location.href='contact.html';">
+      🍓 contact
+    </button>
+    <button class="collabs" onclick="window.location.href='collabs.html';">
+      🧸 collabs
+    </button>
 
-        <button class="life" onclick="window,location.href='life.html';">
-          🌷 life
-        </button>
-        <button class="contact" onclick="window.location.href='contact.html';">
-          🍓 contact
-        </button>
-        <button class="collabs" onclick="window.location.href='collabs.html';">
-          🧸 collabs
-        </button>
-       
-    </div>
-    <hr>
+  </div>
+  <hr>
 
 
     <h2>✩Romeo și Julieta</h2>

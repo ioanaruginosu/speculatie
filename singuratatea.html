@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-    body {
+     body {
        
        background-image: repeating-linear-gradient(pink, white, pink);
      
@@ -13,6 +13,10 @@
         transition-duration: 0.4s;
         cursor: pointer;
     }
+    hr {
+        border-top: 1px solid #7F525D;
+    }
+   
     .back {
         font-size: 40px;
         color: #7F525D;
@@ -25,13 +29,9 @@
         transition-duration: 0.4s;
     }
     .back:hover {
-      color: #E590DE;
+        color: #E590DE;
+        
     }
-    
-    hr {
-        border-top: 1px solid #7F525D;
-    }
-   
     p {
         text-align: left;
 
@@ -50,6 +50,14 @@
         font-size: 20px;
     }
     .poems {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .pphoto {
         text-align: center;
         color: #7F525D;
         background-color: transparent;
@@ -94,6 +102,10 @@
         color: #E590DE;
         
     }
+    .pphoto:hover {
+        color: #E590DE;
+        
+    }
     .poems:hover {
         color: #E590DE;
         
@@ -128,7 +140,9 @@
     .poems {
       font-size: 25px;
     }
-
+    .pphoto {
+      font-size: 25px;
+    }
     .life {
       font-size: 25px;
     }
@@ -166,7 +180,9 @@
     .poems {
       font-size: 35px;
     }
-
+    .pphoto {
+      font-size: 35px;
+    }
     .life {
       font-size: 35px;
     }
@@ -197,7 +213,9 @@
 .poems {
   font-size: 38px;
 }
-
+.pphoto {
+      font-size: 38px;
+    }
 .life {
   font-size: 38px;
 }
@@ -239,7 +257,9 @@ h2 {
 .poems {
   font-size: 42px;
 }
-
+.pphoto {
+      font-size: 42px;
+    }
 .collabs {
       font-size: 42px;
     }
@@ -276,7 +296,9 @@ h2 {
         <button class="poems" onclick="window.location.href='poems.html';">
           💌 poems
         </button>
-
+        <button class="pphoto" onclick="window.location.href='pphoto.html';">
+          🌸 poems on photos
+        </button>
         <button class="life" onclick="window,location.href='life.html';">
           🌷 life
         </button>
