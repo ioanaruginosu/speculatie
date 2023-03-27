@@ -3,27 +3,27 @@
     #slider {
         width: 30%;
         margin: 0px auto;
-        margin-top: 15px;
+        margin-top: 30px;
 
         position: relative;
         overflow: hidden;
-        /*border: 5px solid white;
-        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);*/
+       /* border: 5px solid white;*/
+       /* box-shadow: 5p rgba(0, 0, 0, 0.4);*/
 
     }
 
     .slide {
         width: 100%;
-
         display: none;
         animation-name: fade;
         animation-duration: 1s;
-
+ 
     }
 
     img {
         width: 100%;
-
+        margin-bottom:0;
+        padding: 0;
     }
 
     .decor {
@@ -51,7 +51,14 @@
         cursor: pointer;
         font-size: 20px;
     }
-
+    .pphoto {
+        text-align: center;
+        color: #7F525D;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
     .contact {
         text-align: center;
         color: #7F525D;
@@ -94,7 +101,10 @@
         color: #E590DE;
 
     }
+    .pphoto:hover {
+        color: #E590DE;
 
+    }
     .poems:hover {
         color: #E590DE;
 
@@ -135,7 +145,7 @@
 
     .categ {
         text-align: center;
-        ;
+        
     }
 
 
@@ -156,7 +166,7 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 1.5em;
-        ;
+        
         padding: 15px 10px;
         border-radius: 5px;
         background: white;
@@ -230,32 +240,12 @@
 
     hr {
         border-top: 1px solid #7F525D;
-
     }
 
     div {
-
-
         padding-bottom: 20px;
     }
 
-    .back {
-
-        font-size: 40px;
-        color: #7F525D;
-
-        padding-bottom: 0px;
-        line-height: 0.5;
-        float: right;
-        margin-top: 3%;
-        cursor: pointer;
-        transition-duration: 0.4s;
-
-    }
-
-    .back:hover {
-        color: #E590DE;
-    }
 
 
     .principal>* {
@@ -287,7 +277,9 @@
         .aboutme {
             font-size: 25px;
         }
-
+        .pphoto {
+            font-size: 25px;
+        }
         .poems {
             font-size: 25px;
         }
@@ -335,7 +327,9 @@
         .poems {
             font-size: 35px;
         }
-
+        .pphoto {
+            font-size: 35px;
+        }
         .life {
             font-size: 35px;
         }
@@ -396,7 +390,9 @@
         .collabs {
             font-size: 38px;
         }
-
+        .pphoto {
+            font-size: 38px;
+        }
         .contact {
             font-size: 38px;
         }
@@ -445,7 +441,9 @@
         .collabs {
             font-size: 42px;
         }
-
+        .pphoto {
+            font-size: 42px;
+        }
         .life {
             font-size: 42px;
         }
@@ -490,7 +488,9 @@
         <button class="poems" onclick="window.location.href='poems.html';">
             💌 poems
         </button>
-
+        <button class="pphoto" onclick="window.location.href='pphoto.html';">
+            🌸 poems on photos
+          </button>
         <button class="life" onclick="window,location.href='life.html';">
             🌷 life
         </button>
