@@ -16,6 +16,35 @@
         text-align: center;
         padding-bottom: 20px;
     }
+    
+    .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 4s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.tapp{
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 42%;
+        margin-top: 10.4%;
+      
+
+        height: auto;
+}
+/*.tapp .container{
+  margin: 100px;
+}*/
+
     h1 {
         color: #7F525D;
         text-align: center;
@@ -29,20 +58,21 @@
     }
     p{
         font-size: 2vw;
+        padding:0;
     }
     hr {
         border-top: 1px solid #7F525D;
     }
     img {
         margin-left: 30%;
-       padding: 4%;
+       padding:4%;
         width: 35%;
         height: auto;
         display: block;
     }
     .img4 {
         cursor: pointer;
-        position: relative;
+       /* position: relative;*/
         transition: 0.4s;
     }
     .hide4 {
@@ -437,6 +467,14 @@ h2 {
         <img src="pphoto2.jpg">
     
     <img src="pphoto3.jpg">
+
+  
+    <div class="tapp">
+        <div class="container reveal">
+          <p>˚୨୧⋆｡˚ ⋆ tap ˚୨୧⋆｡˚ ⋆</p>
+      
+        </div>
+     </div>
     <div class="img4" >
         <img  src="photo4.jpg">
         </div>
@@ -491,9 +529,12 @@ te strâng din nou în brațe<br>
 poate n-am să fac nimic nici astăzi<br>
 dar cu siguranță te iubesc pe tine.
     </div>
+
     <div class="img6">
+   
         <img src="pphoto7.jpg">
     </div> 
+    
     <div class="hide6">
         vorbesc mult despre stele<br>
 și mă gândesc des dacă ele<br> 
@@ -512,7 +553,31 @@ sunt frumoase pentru că ne pot pătrunde<br>
 și că au făcut atâtea inimi<br>
 de dragoste să se inunde.
     </div>
+    
     <img class="img7" src="pphoto5.jpg">
     <img src="pphoto6.jpg">
     <img class="img9"src="pphoto8.jpg">
    </body>
+</html>
+
+    
+
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
